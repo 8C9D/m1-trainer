@@ -63,7 +63,7 @@ export default function TestPage() {
           {pct}%
         </p>
         <p className="text-sm text-gray-500">
-          {score} / {questions.length} correct — {passed ? "Pass ✓" : "Not yet ✗"}
+          {score} / {questions.length} correct
         </p>
         <p className="text-xs text-gray-400 mb-4">Passing score: 80%</p>
         <div className="flex gap-3">
