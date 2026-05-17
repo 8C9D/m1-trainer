@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { getAllQuestions, type Question } from "@/lib/questions";
+import { getAllQuestions, shuffle, type Question } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 
@@ -27,7 +27,7 @@ export default function TestPage() {
   useEffect(() => {
     getAllQuestions().then((all) => {
       const filtered = testId === "all" ? all : all.filter((q) => q.testName === testId);
-      setQuestions(filtered);
+      setQuestions(shuffle(filtered).map((q) => ({ ...q, answerOptions: shuffle(q.answerOptions) })));
       setIndex(0);
       setScore(0);
       setDone(false);
