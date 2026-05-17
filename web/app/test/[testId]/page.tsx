@@ -59,8 +59,11 @@ export default function TestPage() {
     const passed = pct >= 80;
     return (
       <main className="flex-1 flex flex-col items-center justify-center px-4 gap-2">
-        <p className={`text-4xl font-bold ${passed ? "text-green-600" : "text-red-500"}`}>
-          {pct}%
+        <p className="text-4xl font-bold">
+          <span className={passed ? "text-green-600" : "text-red-500"}>{pct}%</span>
+          <span className={`text-lg font-semibold ml-3 ${passed ? "text-green-600" : "text-red-500"}`}>
+            {passed ? "PASS" : "FAIL"}
+          </span>
         </p>
         <p className="text-sm text-gray-500">
           {score} / {questions.length} correct
