@@ -1,0 +1,1082 @@
+[
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 1,
+    "question": "When riding, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "keep your eyes scanning the road ahead, behind and beside you."
+      },
+      {
+        "index": "2",
+        "text": "look to your right."
+      },
+      {
+        "index": "3",
+        "text": "look at the road right in front of your motorcycle."
+      },
+      {
+        "index": "4",
+        "text": "fix your gaze on the vehicle ahead."
+      }
+    ],
+    "chosenAnswer": "keep your eyes scanning the road ahead, behind and beside you.",
+    "correctAnswer": "keep your eyes scanning the road ahead, behind and beside you.",
+    "explanation": "Keep your eyes constantly moving and scanning the road ahead, beside and behind. Don't look at any one place for more than two seconds; trouble could be developing where you aren't looking."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 2,
+    "question": "When entering or leaving a highway, a group of motorcyclists should drive",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "alongside each other."
+      },
+      {
+        "index": "2",
+        "text": "in a staggered formation."
+      },
+      {
+        "index": "3",
+        "text": "in any order."
+      },
+      {
+        "index": "4",
+        "text": "single file."
+      }
+    ],
+    "chosenAnswer": "alongside each other.",
+    "correctAnswer": "single file.",
+    "explanation": "Staggered formation can be safely used on an open road. However, you should drive single file (in a single line) on curves, in turns or when entering or leaving a freeway."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 3,
+    "question": "Which of the following statements about carrying passengers are true?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Your stopping distance will increase."
+      },
+      {
+        "index": "2",
+        "text": "It will take you longer to speed up."
+      },
+      {
+        "index": "3",
+        "text": "It will take you longer to make a turn."
+      },
+      {
+        "index": "4",
+        "text": "All of the above statements are true."
+      }
+    ],
+    "chosenAnswer": "Your stopping distance will increase.",
+    "correctAnswer": "All of the above statements are true.",
+    "explanation": "When you carry cargo or a passenger on your motorcycle, the stopping distance will increase. It will also take you longer to speed up or turn. Adjust your riding accordingly."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 4,
+    "question": "A steady yellow traffic light at an intersection indicates that you must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "increase your speed to get past the yellow light before it turns red."
+      },
+      {
+        "index": "2",
+        "text": "stop if you can do so safely."
+      },
+      {
+        "index": "3",
+        "text": "slow down and proceed with caution."
+      },
+      {
+        "index": "4",
+        "text": "stop, yield to pedestrians, and proceed with caution."
+      }
+    ],
+    "chosenAnswer": "increase your speed to get past the yellow light before it turns red.",
+    "correctAnswer": "stop if you can do so safely.",
+    "explanation": "A steady yellow traffic light indicates that the traffic light is about to turn red. Stop if it is safe to do so. However, don't stop suddenly and risk getting rear-ended by the vehicle behind you. If you cannot stop safely, proceed with caution into the intersection, perform the maneuver you intended to make there, and clear the intersection. Never speed up in an attempt to \"beat the light\" before it turns red."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 5,
+    "question": "When upshifting, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "twist the throttle."
+      },
+      {
+        "index": "2",
+        "text": "twist the throttle with the clutch pulled in."
+      },
+      {
+        "index": "3",
+        "text": "twist the clutch while you pull in the throttle."
+      },
+      {
+        "index": "4",
+        "text": "twist the throttle as you pull in the clutch."
+      }
+    ],
+    "chosenAnswer": "twist the throttle.",
+    "correctAnswer": "twist the throttle as you pull in the clutch.",
+    "explanation": "To shift up, twist the throttle as you pull in the clutch. Move the shift lever up with your toe until it stops. When you can hear and feel the gear engage, ease off on the clutch and slowly twist the throttle back up to speed."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 6,
+    "question": "When carrying cargo, it is important to",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "weigh it before loading it on the motorcycle."
+      },
+      {
+        "index": "2",
+        "text": "not carry any passengers."
+      },
+      {
+        "index": "3",
+        "text": "keep the load low."
+      },
+      {
+        "index": "4",
+        "text": "secure it just to the sides of the motorcycle."
+      }
+    ],
+    "chosenAnswer": "weigh it before loading it on the motorcycle.",
+    "correctAnswer": "keep the load low.",
+    "explanation": "When carrying cargo, it is important to keep the load low to maintain a low centre of gravity."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 7,
+    "question": "The best way to discourage other vehicles from trying to share your lane is to",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "ride a little to the left or right of the centre of your lane."
+      },
+      {
+        "index": "2",
+        "text": "ride on the line that divides the traffic lanes."
+      },
+      {
+        "index": "3",
+        "text": "ride to the far right of your lane."
+      },
+      {
+        "index": "4",
+        "text": "ride to the far left of your lane."
+      }
+    ],
+    "chosenAnswer": "ride a little to the left or right of the centre of your lane.",
+    "correctAnswer": "ride a little to the left or right of the centre of your lane.",
+    "explanation": "To discourage other vehicles from sharing your lane, it is best to ride a little to the left or right of the centre of your lane, in the track where the tires of a four-wheeled vehicle would travel. This spot is referred to as the left or right “tire track.” It is also called the “blocking position” because it blocks or discourages other drivers from sharing your lane."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 8,
+    "question": "You are following a large truck that is signaling a right turn. You should anticipate",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the truck swinging right."
+      },
+      {
+        "index": "2",
+        "text": "the truck swinging left."
+      },
+      {
+        "index": "3",
+        "text": "the truck stopping suddenly."
+      },
+      {
+        "index": "4",
+        "text": "the truck turning close to the right curb."
+      }
+    ],
+    "chosenAnswer": "the truck swinging right.",
+    "correctAnswer": "the truck swinging left.",
+    "explanation": "When any vehicle turns, its rear wheels follow a shorter path than its front wheels. The longer the vehicle, the greater the difference in the turning path. If a large truck (big rig) tries to turn right from the right lane, it might overrun the right curb. This is why big rigs must often swing wide left to complete a right turn. When you follow a big rig, look at its turn signals before you try to pass it. If the truck appears to be turning left, check its turn signals; the driver may be turning right but first swinging wide."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 9,
+    "question": "While riding a motorcycle, you should position your feet",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "firmly on the footrests."
+      },
+      {
+        "index": "2",
+        "text": "as far forward as possible."
+      },
+      {
+        "index": "3",
+        "text": "to drag lightly on the ground."
+      },
+      {
+        "index": "4",
+        "text": "with your toes pointed downward."
+      }
+    ],
+    "chosenAnswer": "firmly on the footrests.",
+    "correctAnswer": "firmly on the footrests.",
+    "explanation": "While riding a motorcycle, you should position your feet firmly on the footrests. This helps maintain balance. Pointing your feet downward could cause them to catch on something."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 10,
+    "question": "When riding with a passenger, how should you adjust your riding?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Don't use saddlebags."
+      },
+      {
+        "index": "2",
+        "text": "Increase the throttle when making turns."
+      },
+      {
+        "index": "3",
+        "text": "Go slower when taking curves or corners."
+      },
+      {
+        "index": "4",
+        "text": "Make sure the gas tank is at least half full."
+      }
+    ],
+    "chosenAnswer": "Don't use saddlebags.",
+    "correctAnswer": "Go slower when taking curves or corners.",
+    "explanation": "Your motorcycle will respond more slowly with a passenger. Hence, you should ride a bit slower, especially when taking curves, corners or bumps."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 11,
+    "question": "In countersteering, to initiate a turn, PUSHING the right handgrip will allow the motorcycle to",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "make a U-turn only."
+      },
+      {
+        "index": "2",
+        "text": "turn left."
+      },
+      {
+        "index": "3",
+        "text": "turn right."
+      },
+      {
+        "index": "4",
+        "text": "go straight."
+      }
+    ],
+    "chosenAnswer": "make a U-turn only.",
+    "correctAnswer": "turn right.",
+    "explanation": "In counter-steering, you momentarily steer counter to the direction in which you want to turn. This causes the motorcycle to lean in the direction for the turn."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 12,
+    "question": "When riding in a group, beginner riders should be positioned",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007230529313354.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "anywhere."
+      },
+      {
+        "index": "2",
+        "text": "at the end of the group."
+      },
+      {
+        "index": "3",
+        "text": "behind the leader."
+      },
+      {
+        "index": "4",
+        "text": "at the front of the group."
+      }
+    ],
+    "chosenAnswer": "anywhere.",
+    "correctAnswer": "behind the leader.",
+    "explanation": "When riding in a group, an inexperienced rider should be positioned right behind the leader. The inexperienced rider won't have to chase after the group, and more experienced riders will be able to keep an eye on the inexperienced rider from behind."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 13,
+    "question": "What type of group formation should be used when riding through curves?",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202008101155284067.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Staggered formation"
+      },
+      {
+        "index": "2",
+        "text": "Single file"
+      },
+      {
+        "index": "3",
+        "text": "V-shaped formation"
+      },
+      {
+        "index": "4",
+        "text": "In pairs"
+      }
+    ],
+    "chosenAnswer": "Staggered formation",
+    "correctAnswer": "Single file",
+    "explanation": "When riding through curves, it is best to ride single file (in a single line)."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 14,
+    "question": "If the traffic signal light facing you is red and you intend to go straight through the intersection, what must you do?",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202003112014364009.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Slow down; then proceed when the way is clear."
+      },
+      {
+        "index": "2",
+        "text": "Come to a complete stop and wait for the light to turn green."
+      },
+      {
+        "index": "3",
+        "text": "Stop if there are vehicles on your path of travel."
+      },
+      {
+        "index": "4",
+        "text": "Stop momentarily; then proceed when safe."
+      }
+    ],
+    "chosenAnswer": "Slow down; then proceed when the way is clear.",
+    "correctAnswer": "Come to a complete stop and wait for the light to turn green.",
+    "explanation": "When the traffic light is red, you must come to a complete stop. Proceed only when the signal turns green and the way is clear."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 15,
+    "question": "If you are riding over an obstacle on the road, what is the best way to absorb shock?",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007230423144378.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Increase your speed."
+      },
+      {
+        "index": "2",
+        "text": "Rise slightly off the seat."
+      },
+      {
+        "index": "3",
+        "text": "Avoid using the brakes."
+      },
+      {
+        "index": "4",
+        "text": "Crouch down."
+      }
+    ],
+    "chosenAnswer": "Increase your speed.",
+    "correctAnswer": "Rise slightly off the seat.",
+    "explanation": "If you are riding over an obstacle on the road, the best way to absorb shock is to raise yourself slightly off the seat and let your knees and elbows absorb the shock."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 16,
+    "question": "When carrying cargo or a passenger,",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "drive at lower speeds."
+      },
+      {
+        "index": "2",
+        "text": "start slowing down earlier than usual."
+      },
+      {
+        "index": "3",
+        "text": "maintain a greater following distance between you and the vehicle ahead."
+      },
+      {
+        "index": "4",
+        "text": "do all of the above."
+      }
+    ],
+    "chosenAnswer": "drive at lower speeds.",
+    "correctAnswer": "do all of the above.",
+    "explanation": "When carrying cargo or a passenger, some speed adjustments are required. Drive slower and leave more space ahead and to your sides. Adjust your riding accordingly."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 17,
+    "question": "You must have your motorcycle's headlight turned on",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "only in rain or fog."
+      },
+      {
+        "index": "2",
+        "text": "only at night."
+      },
+      {
+        "index": "3",
+        "text": "whenever you're driving."
+      },
+      {
+        "index": "4",
+        "text": "only in the daytime."
+      }
+    ],
+    "chosenAnswer": "only in rain or fog.",
+    "correctAnswer": "whenever you're driving.",
+    "explanation": "All motorcycles must have a white light at the front (headlight) and a red light at the back (rear or tail light), and these must be used at all times of the day and night."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 18,
+    "question": "At night, if you meet another vehicle with blinding bright lights, the safest thing to do is",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "turn your high beam on."
+      },
+      {
+        "index": "2",
+        "text": "look at the headlights of the approaching vehicle."
+      },
+      {
+        "index": "3",
+        "text": "open and close your eyes rapidly."
+      },
+      {
+        "index": "4",
+        "text": "look slightly to the right-hand side."
+      }
+    ],
+    "chosenAnswer": "turn your high beam on.",
+    "correctAnswer": "look slightly to the right-hand side.",
+    "explanation": "At night, should you meet another vehicle with blinding bright lights, the safest thing to do is to look slightly to the right-hand side."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 19,
+    "question": "When riding in a group, motorcyclists should usually ride",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "alongside each other."
+      },
+      {
+        "index": "2",
+        "text": "in a V-formation."
+      },
+      {
+        "index": "3",
+        "text": "single file."
+      },
+      {
+        "index": "4",
+        "text": "in a staggered formation."
+      }
+    ],
+    "chosenAnswer": "alongside each other.",
+    "correctAnswer": "in a staggered formation.",
+    "explanation": "When riding in a group, motorcyclists should usually ride in a staggered formation. It keeps the group together while still maintaining an adequate space cushion."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 20,
+    "question": "When driving in a group, group members should communicate by",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "using hand signals."
+      },
+      {
+        "index": "2",
+        "text": "driving in pairs."
+      },
+      {
+        "index": "3",
+        "text": "loud yelling."
+      },
+      {
+        "index": "4",
+        "text": "changing lane positions."
+      }
+    ],
+    "chosenAnswer": "using hand signals.",
+    "correctAnswer": "using hand signals.",
+    "explanation": "When you're driving in a group, communicate with hand signals. Make sure all group members are familiar with the hand signals before you start your trip. To speak to another driver, wait until the two of you have stopped."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 21,
+    "question": "This driver's hand signal indicates that this driver intends to",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202002181152514351.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "turn left."
+      },
+      {
+        "index": "2",
+        "text": "turn right."
+      },
+      {
+        "index": "3",
+        "text": "slow down or stop."
+      },
+      {
+        "index": "4",
+        "text": "make a U-turn."
+      }
+    ],
+    "chosenAnswer": "turn left.",
+    "correctAnswer": "slow down or stop.",
+    "explanation": "This driver intends to slow down or stop."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 22,
+    "question": "When you are being passed by another vehicle, you should",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202006041920372833.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "move as far to the right as possible."
+      },
+      {
+        "index": "2",
+        "text": "move toward the left of your lane."
+      },
+      {
+        "index": "3",
+        "text": "move toward the centre of your lane."
+      },
+      {
+        "index": "4",
+        "text": "maintain your current lane position."
+      }
+    ],
+    "chosenAnswer": "move as far to the right as possible.",
+    "correctAnswer": "move toward the centre of your lane.",
+    "explanation": "When you're being passed by an oncoming vehicle or from behind, move toward the centre of your lane. This way, you won't be too close to a passing vehicle and you'll discourage other drivers from moving into your lane."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 23,
+    "question": "When crossing a very slippery surface, you should",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007231040057205.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "pull in the clutch and coast."
+      },
+      {
+        "index": "2",
+        "text": "accelerate or maintain your speed."
+      },
+      {
+        "index": "3",
+        "text": "use the front brake only."
+      },
+      {
+        "index": "4",
+        "text": "stop and walk the bike across."
+      }
+    ],
+    "chosenAnswer": "pull in the clutch and coast.",
+    "correctAnswer": "pull in the clutch and coast.",
+    "explanation": "When crossing a very slippery surface, you should pull in the clutch and coast across."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 24,
+    "question": "Why are gravel roads potentially dangerous to motorcyclists?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "They do not have posted speed limits."
+      },
+      {
+        "index": "2",
+        "text": "There are no lane markers."
+      },
+      {
+        "index": "3",
+        "text": "Other drivers are known to drive recklessly."
+      },
+      {
+        "index": "4",
+        "text": "Gravel provides less traction than pavement."
+      }
+    ],
+    "chosenAnswer": "They do not have posted speed limits.",
+    "correctAnswer": "Gravel provides less traction than pavement.",
+    "explanation": "Gravel roads are potentially dangerous to motorcyclists because the loose sand and gravel provide little traction."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 25,
+    "question": "When can you ride a motorcycle between two lanes of traffic?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Only if both lanes are headed in the same direction"
+      },
+      {
+        "index": "2",
+        "text": "Only in designated areas"
+      },
+      {
+        "index": "3",
+        "text": "Never"
+      },
+      {
+        "index": "4",
+        "text": "Only in heavy traffic"
+      }
+    ],
+    "chosenAnswer": "Only if both lanes are headed in the same direction",
+    "correctAnswer": "Never",
+    "explanation": "A motorcycle needs a full lane width to maneuver safely. A motorcycle should never be ridden between lanes of traffic, even if it looks like there is room. It could put you too close to other vehicles; if they were to start making even a small movement such as changing lanes, you would have no place else to go."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 26,
+    "question": "Which of the following statements about driving in the rain is FALSE?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Use the front brake if you need to stop quickly."
+      },
+      {
+        "index": "2",
+        "text": "Slow down and avoid sudden moves."
+      },
+      {
+        "index": "3",
+        "text": "Avoid driving in the centre of the road."
+      },
+      {
+        "index": "4",
+        "text": "Wear bright colours and reflective or fluorescent clothing."
+      }
+    ],
+    "chosenAnswer": "Use the front brake if you need to stop quickly.",
+    "correctAnswer": "Use the front brake if you need to stop quickly.",
+    "explanation": "Both brakes together are more effective than the rear brake alone, even on a slippery surface."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 27,
+    "question": "Snow removal vehicles on public roadways are equipped with flashing ______ lights.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "green"
+      },
+      {
+        "index": "2",
+        "text": "yellow"
+      },
+      {
+        "index": "3",
+        "text": "red"
+      },
+      {
+        "index": "4",
+        "text": "blue"
+      }
+    ],
+    "chosenAnswer": "green",
+    "correctAnswer": "blue",
+    "explanation": "Snow-removal vehicles on public roadways are equipped with flashing blue lights that can be seen from up to 150 metres."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 28,
+    "question": "The edge of the road is dangerous for motorcycles because",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007230515431262.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the pavement is of poor quality."
+      },
+      {
+        "index": "2",
+        "text": "visibility is poor there."
+      },
+      {
+        "index": "3",
+        "text": "dirt and gravel provide little traction."
+      },
+      {
+        "index": "4",
+        "text": "it is not driven on often."
+      }
+    ],
+    "chosenAnswer": "the pavement is of poor quality.",
+    "correctAnswer": "dirt and gravel provide little traction.",
+    "explanation": "The side of the road can be dangerous to motorcycles because the dirt and gravel that build up there provide little traction."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 29,
+    "question": "Most of your motorcycle's stopping power is provided by",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the rear brake."
+      },
+      {
+        "index": "2",
+        "text": "the front and rear brakes equally."
+      },
+      {
+        "index": "3",
+        "text": "the clutch."
+      },
+      {
+        "index": "4",
+        "text": "the front brake."
+      }
+    ],
+    "chosenAnswer": "the rear brake.",
+    "correctAnswer": "the front brake.",
+    "explanation": "The front brake provides three-quarters of your motorcycle's stopping power."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 30,
+    "question": "For increased safety when riding at night, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "increase your following distance."
+      },
+      {
+        "index": "2",
+        "text": "reduce your speed."
+      },
+      {
+        "index": "3",
+        "text": "watch the taillights of the vehicle ahead."
+      },
+      {
+        "index": "4",
+        "text": "do all of the above."
+      }
+    ],
+    "chosenAnswer": "increase your following distance.",
+    "correctAnswer": "do all of the above.",
+    "explanation": "For increased safety when riding at night, you should do the following: 1. Reduce your speed to give yourself more time to react to the unexpected. 2. Increase your following distance to give yourself more room to maneuver if the vehicle ahead of you stops short. 3. Watch the vehicle ahead of you. Its headlights can help give you a better view of the road. And if the vehicle's taillights seem to bounce up and down, it is likely riding over bumps."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 31,
+    "question": "Which of the following statements about blind spots is FALSE?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Larger vehicles have smaller blind spots."
+      },
+      {
+        "index": "2",
+        "text": "There are blind spots to the left rear and right rear of a vehicle."
+      },
+      {
+        "index": "3",
+        "text": "The best way to compensate for blind spots is to turn and glance over your shoulder."
+      },
+      {
+        "index": "4",
+        "text": "Don't drive in another vehicle's blind spot."
+      }
+    ],
+    "chosenAnswer": "Larger vehicles have smaller blind spots.",
+    "correctAnswer": "Larger vehicles have smaller blind spots.",
+    "explanation": "Every vehicle has blind spots. Generally, the larger the vehicle, the larger the blind spots."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 32,
+    "question": "When approaching a Yield sign, what does the law require you to do?",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202002061228303970.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Slow down; stop if necessary to yield the right-of-way."
+      },
+      {
+        "index": "2",
+        "text": "Stop 50 m before the sign."
+      },
+      {
+        "index": "3",
+        "text": "Slow down and proceed through the intersection slowly."
+      },
+      {
+        "index": "4",
+        "text": "Slow down and stop even if the intersection is clear."
+      }
+    ],
+    "chosenAnswer": "Slow down; stop if necessary to yield the right-of-way.",
+    "correctAnswer": "Slow down; stop if necessary to yield the right-of-way.",
+    "explanation": "This sign means that drivers must slow down and be ready to stop if necessary to let any vehicle or pedestrian pass."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 33,
+    "question": "M1 licence holders may NOT drive",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "in residential areas."
+      },
+      {
+        "index": "2",
+        "text": "on country roads unless accompanied by a driving instructor."
+      },
+      {
+        "index": "3",
+        "text": "on rural roads with speed limits below 80 km/h."
+      },
+      {
+        "index": "4",
+        "text": "on most roads whose speed limits are over 80 km/h."
+      }
+    ],
+    "chosenAnswer": "in residential areas.",
+    "correctAnswer": "on most roads whose speed limits are over 80 km/h.",
+    "explanation": "While you hold an M1 licence, you may not drive on roads whose speed limits are over 80 km/h, except highways 11, 17, 61, 69, 71, 101, 102, 144 and 655. (These exceptions are made because some drivers have no other route available to them.) Also, you may not drive from one-half hour after sunset to one-half hour before sunrise."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 34,
+    "question": "To carry cargo, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "keep it low."
+      },
+      {
+        "index": "2",
+        "text": "distribute it evenly."
+      },
+      {
+        "index": "3",
+        "text": "keep it forward."
+      },
+      {
+        "index": "4",
+        "text": "do all of the above."
+      }
+    ],
+    "chosenAnswer": "keep it low.",
+    "correctAnswer": "do all of the above.",
+    "explanation": "To carry a load, you should position it forward and low and distribute the weight evenly. Keep your motorcycle balanced and keep its centre of gravity low."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 35,
+    "question": "This hand signal indicates that the driver intends to",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202002181150078740.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "make a U-turn."
+      },
+      {
+        "index": "2",
+        "text": "slow down."
+      },
+      {
+        "index": "3",
+        "text": "turn left."
+      },
+      {
+        "index": "4",
+        "text": "turn right."
+      }
+    ],
+    "chosenAnswer": "make a U-turn.",
+    "correctAnswer": "turn right.",
+    "explanation": "This hand signal indicates that the driver intends to turn right."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 36,
+    "question": "Under ideal conditions, you should maintain a following distance of at least _______ behind the vehicle ahead of you.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "5 seconds"
+      },
+      {
+        "index": "2",
+        "text": "2 seconds"
+      },
+      {
+        "index": "3",
+        "text": "4 seconds"
+      },
+      {
+        "index": "4",
+        "text": "10 seconds"
+      }
+    ],
+    "chosenAnswer": "5 seconds",
+    "correctAnswer": "2 seconds",
+    "explanation": "Always keep at least a two-second following distance behind the vehicle in front of you. This gives you time to react if something happens ahead. It also gives you a better view of things in the road, such as potholes, slippery spots, chunks of tire tread, or debris. If conditions are less than ideal, such as in bad weather, leave even more space."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 37,
+    "question": "Before making a left turn from a one-way street, you should position your motorcycle",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "as close to the left side of the roadway as possible."
+      },
+      {
+        "index": "2",
+        "text": "as close to the right side of the road as possible."
+      },
+      {
+        "index": "3",
+        "text": "to the right of the white line."
+      },
+      {
+        "index": "4",
+        "text": "to the left of the white line."
+      }
+    ],
+    "chosenAnswer": "as close to the left side of the roadway as possible.",
+    "correctAnswer": "as close to the left side of the roadway as possible.",
+    "explanation": "When making a left turn, position your motorcycle as close to the left side of the roadway as possible."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 38,
+    "question": "On a two-lane road where traffic moves in opposite directions, you may pass on the left only when",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "a solid yellow line is next to your lane."
+      },
+      {
+        "index": "2",
+        "text": "a broken yellow line is not next to your lane."
+      },
+      {
+        "index": "3",
+        "text": "a broken yellow line is next to your lane."
+      },
+      {
+        "index": "4",
+        "text": "a double solid yellow line is in the centre."
+      }
+    ],
+    "chosenAnswer": "a solid yellow line is next to your lane.",
+    "correctAnswer": "a broken yellow line is next to your lane.",
+    "explanation": "On a two-lane road where traffic moves in opposite directions, you may pass on the left when a broken yellow line is next to your lane."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 39,
+    "question": "What type of clothing is best for daytime riding?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Brightly colored clothing"
+      },
+      {
+        "index": "2",
+        "text": "Any clothing that covers your arms and legs"
+      },
+      {
+        "index": "3",
+        "text": "Gray clothing to blend into the environment"
+      },
+      {
+        "index": "4",
+        "text": "Clothing made of non-reflective material"
+      }
+    ],
+    "chosenAnswer": "Brightly colored clothing",
+    "correctAnswer": "Brightly colored clothing",
+    "explanation": "Most collisions occur in broad daylight. Wear brightly colored clothing to increase your chances of being seen. Bright orange, red, yellow, or green jackets or vests are best for being seen. Reflective material on your vest and helmets will help drivers see you from the side."
+  },
+  {
+    "testName": "m1-practice-test-2",
+    "questionNumber": 40,
+    "question": "A driver in front of you is signaling with his or her hand and arm pointing upward. This driver intends to",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202002181150078740.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "make a U-turn."
+      },
+      {
+        "index": "2",
+        "text": "turn left."
+      },
+      {
+        "index": "3",
+        "text": "stop."
+      },
+      {
+        "index": "4",
+        "text": "turn right."
+      }
+    ],
+    "chosenAnswer": "make a U-turn.",
+    "correctAnswer": "turn right.",
+    "explanation": "You may use your vehicle's signal lights or hand signals. If the signal lights are not working or if bright sunlight makes them hard to see, use hand signals. A driver in front of you who signals with his or her hand and arm pointing upward is about to turn right."
+  }
+]

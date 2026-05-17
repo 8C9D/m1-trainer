@@ -1,0 +1,542 @@
+[
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 1,
+    "question": "An accident must be reported to the police if",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "someone has been hurt or killed."
+      },
+      {
+        "index": "2",
+        "text": "vehicle damage is over $2,000."
+      },
+      {
+        "index": "3",
+        "text": "property damage is over $2,000."
+      },
+      {
+        "index": "4",
+        "text": "any of the above are true."
+      }
+    ],
+    "chosenAnswer": "someone has been hurt or killed.",
+    "correctAnswer": "any of the above are true.",
+    "explanation": "By law, you must report to the police any collision involving injuries or damage to vehicles or property exceeding $2,000."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 2,
+    "question": "Unless otherwise posted, the maximum speed limit on a highway outside of a city, town or village is",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "80 km/h."
+      },
+      {
+        "index": "2",
+        "text": "60 km/h."
+      },
+      {
+        "index": "3",
+        "text": "70 km/h."
+      },
+      {
+        "index": "4",
+        "text": "100 km/h."
+      }
+    ],
+    "chosenAnswer": "80 km/h.",
+    "correctAnswer": "80 km/h.",
+    "explanation": "Where there are no posted speed limits, the maximum speed limit is 50 km/h in cities, towns and villages, and 80 km/h elsewhere."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 3,
+    "question": "If you fail to present your insurance card when stopped by a police officer, you may be fined",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "$1,000."
+      },
+      {
+        "index": "2",
+        "text": "$750."
+      },
+      {
+        "index": "3",
+        "text": "$150."
+      },
+      {
+        "index": "4",
+        "text": "$400."
+      }
+    ],
+    "chosenAnswer": "$1,000.",
+    "correctAnswer": "$400.",
+    "explanation": "When driving your own vehicle or someone else’s, you must carry the pink liability insurance card from the insurance company for that particular vehicle. You must show this card if a police officer asks for it. If you do not, you may be fined up to $400."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 4,
+    "question": "While an M1 licence holder is operating a motorcycle, his or her blood alcohol level must not be greater than",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "0.04"
+      },
+      {
+        "index": "2",
+        "text": "0.08"
+      },
+      {
+        "index": "3",
+        "text": "zero"
+      },
+      {
+        "index": "4",
+        "text": "0.05"
+      }
+    ],
+    "chosenAnswer": "0.04",
+    "correctAnswer": "zero",
+    "explanation": "M1 licence holders may not operate a motorcycle if they have been drinking alcohol."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 5,
+    "question": "You must report a change of name or address to the Ministry of Transportation within",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "6 days."
+      },
+      {
+        "index": "2",
+        "text": "3 months."
+      },
+      {
+        "index": "3",
+        "text": "10 days."
+      },
+      {
+        "index": "4",
+        "text": "1 month."
+      }
+    ],
+    "chosenAnswer": "6 days.",
+    "correctAnswer": "6 days.",
+    "explanation": "If your name or address changes, it is your responsibility to report it to the Ministry of Transportation within six days."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 6,
+    "question": "If you are convicted of _________, six demerit points will be added to your driving record.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "racing"
+      },
+      {
+        "index": "2",
+        "text": "driving at 50 km/h or more over the speed limit"
+      },
+      {
+        "index": "3",
+        "text": "failing to stop for a school bus"
+      },
+      {
+        "index": "4",
+        "text": "any of the above"
+      }
+    ],
+    "chosenAnswer": "racing",
+    "correctAnswer": "any of the above",
+    "explanation": "If you are convicted of careless driving, racing, failing to stop for a school bus or exceeding the speed limit by 50 km/hour or more, six demerit points will be added to your driving record. You may also face additional penalties."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 7,
+    "question": "If you are found guilty of falsifying your motorcycle's insurance documents, you may face which of the following penalties?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Loss of licence for up to a year"
+      },
+      {
+        "index": "2",
+        "text": "Loss of your vehicle for up to 3 months"
+      },
+      {
+        "index": "3",
+        "text": "A fine of between $5,000 and $25,000"
+      },
+      {
+        "index": "4",
+        "text": "One or more of the above"
+      }
+    ],
+    "chosenAnswer": "Loss of licence for up to a year",
+    "correctAnswer": "One or more of the above",
+    "explanation": "Before you may register your motorcycle or moped or renew your registration, you must show proof that you have insurance coverage. If you provide false documents or lie about your insurance, you can be fined from $5,000 to $25,000. You may also lose your licence for up to one year and have your motorcycle or moped taken away for up to three months."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 8,
+    "question": "If you are found guilty of driving around a railway crossing barrier, ____ demerit point(s) will be added to your driving record.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "3"
+      },
+      {
+        "index": "2",
+        "text": "2"
+      },
+      {
+        "index": "3",
+        "text": "5"
+      },
+      {
+        "index": "4",
+        "text": "1"
+      }
+    ],
+    "chosenAnswer": "3",
+    "correctAnswer": "3",
+    "explanation": "Many different offences carry three points each. These include driving through, around or under a railway crossing barrier; failing to yield the right-of-way; and failing to obey a stop sign, traffic light or railway crossing signal."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 9,
+    "question": "If your licence is suspended,",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "you may operate a motorcycle in an emergency."
+      },
+      {
+        "index": "2",
+        "text": "you may operate a motorcycle when accompanied by a licensed rider."
+      },
+      {
+        "index": "3",
+        "text": "you may not operate a motorcycle."
+      },
+      {
+        "index": "4",
+        "text": "you may only ride to and from work."
+      }
+    ],
+    "chosenAnswer": "you may operate a motorcycle in an emergency.",
+    "correctAnswer": "you may not operate a motorcycle.",
+    "explanation": "If your licence is suspended, you may not operate a motorcycle under any circumstances. [R.S.O. 1990, c. H.8, s. 36]"
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 10,
+    "question": "Which of the following statements about a Safety Standards Certificate are true?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "It is a document that certifies your vehicle's fitness."
+      },
+      {
+        "index": "2",
+        "text": "It is illegal to ride your motorcycle without it."
+      },
+      {
+        "index": "3",
+        "text": "It is valid for 36 days after the inspection."
+      },
+      {
+        "index": "4",
+        "text": "All of the above statements are correct."
+      }
+    ],
+    "chosenAnswer": "It is a document that certifies your vehicle's fitness.",
+    "correctAnswer": "All of the above statements are correct.",
+    "explanation": "An inspection station licensed by the Ministry of Transportation to inspect motorcycles can issue a safety standards certificate (SSC) for your vehicle, provided that it has passed an inspection. An SSC is valid for 36 days after the inspection."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 11,
+    "question": "__________ can affect your ability to ride a motorcycle.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Over-the-counter medications"
+      },
+      {
+        "index": "2",
+        "text": "Prescription medications"
+      },
+      {
+        "index": "3",
+        "text": "Illegal drugs"
+      },
+      {
+        "index": "4",
+        "text": "Any of the above"
+      }
+    ],
+    "chosenAnswer": "Over-the-counter medications",
+    "correctAnswer": "Any of the above",
+    "explanation": "Not only alcohol can affect your ability to ride a motorcycle. Some illegal, prescription, and over-the-counter drugs can also affect your riding abilities. If you're not sure of the effects of a particular medication, check the warning label or ask your pharmacist or doctor."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 12,
+    "question": "Class M1 and M2 drivers will be sent a second warning letter encouraging you to improve your driving behaviour if they have accumulated",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "6 demerit points."
+      },
+      {
+        "index": "2",
+        "text": "9 demerit points."
+      },
+      {
+        "index": "3",
+        "text": "15 demerit points."
+      },
+      {
+        "index": "4",
+        "text": "3 demerit points."
+      }
+    ],
+    "chosenAnswer": "6 demerit points.",
+    "correctAnswer": "6 demerit points.",
+    "explanation": "See section “Demerit-point System for Level 1 and Level 2 Drivers” in the official MTO Driver's handbook. Note that this question refers to Level 1 and Level 2 drivers, NOT fully licensed drivers."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 13,
+    "question": "According to the Official Ministry of Transportation Motorcycle Handbook, how often should you inspect your motorcycle for problems?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Biweekly"
+      },
+      {
+        "index": "2",
+        "text": "Every time you ride"
+      },
+      {
+        "index": "3",
+        "text": "Weekly"
+      },
+      {
+        "index": "4",
+        "text": "Monthly"
+      }
+    ],
+    "chosenAnswer": "Biweekly",
+    "correctAnswer": "Every time you ride",
+    "explanation": "Motorcycles require more maintenance than cars. It is important that you read your owner’s manual, inspect your motorcycle carefully and fix things right away. According to the Official Ministry of Transportation Motorcycle Handbook, in addition to the check you do each time you ride, some things as tires, wheels, coolant, battery, drive line, brakes and shock absorbers should be carefully examined weekly."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 14,
+    "question": "When are you allowed to lend your licence to a friend?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "If you are riding together"
+      },
+      {
+        "index": "2",
+        "text": "If your friend is borrowing your motorcycle"
+      },
+      {
+        "index": "3",
+        "text": "Never"
+      },
+      {
+        "index": "4",
+        "text": "Only in an emergency"
+      }
+    ],
+    "chosenAnswer": "If you are riding together",
+    "correctAnswer": "Never",
+    "explanation": "It is illegal to lend your licence to anyone or use someone else's licence as your own."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 15,
+    "question": "Unless otherwise posted, the maximum speed limit in cities, towns and villages is",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "50 km/h."
+      },
+      {
+        "index": "2",
+        "text": "60 km/h."
+      },
+      {
+        "index": "3",
+        "text": "40 km/h."
+      },
+      {
+        "index": "4",
+        "text": "30 km/h."
+      }
+    ],
+    "chosenAnswer": "50 km/h.",
+    "correctAnswer": "50 km/h.",
+    "explanation": "Where there are no posted speed limits, the maximum speed limit is 50 km/h in cities, towns and villages, and 80 km/h elsewhere."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 16,
+    "question": "How many passengers can an M1 driver carry?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Two"
+      },
+      {
+        "index": "2",
+        "text": "One"
+      },
+      {
+        "index": "3",
+        "text": "None"
+      },
+      {
+        "index": "4",
+        "text": "One immediate relative"
+      }
+    ],
+    "chosenAnswer": "Two",
+    "correctAnswer": "None",
+    "explanation": "M1 drivers are not allowed to carry any passengers."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 17,
+    "question": "If you change the colour of your motorcycle, you must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "report it to the police within 6 days."
+      },
+      {
+        "index": "2",
+        "text": "call 911."
+      },
+      {
+        "index": "3",
+        "text": "report it to a Driver and Vehicle Licence Issuing Office within 6 days."
+      },
+      {
+        "index": "4",
+        "text": "do nothing."
+      }
+    ],
+    "chosenAnswer": "report it to the police within 6 days.",
+    "correctAnswer": "report it to a Driver and Vehicle Licence Issuing Office within 6 days.",
+    "explanation": "Your vehicle permit includes a description of your motorcycle. If you have changed anything, such as the colour, you must report it to a Driver and Vehicle Licence Issuing Office within six days."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 18,
+    "question": "An M1 licence is valid for",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "60 days."
+      },
+      {
+        "index": "2",
+        "text": "30 days."
+      },
+      {
+        "index": "3",
+        "text": "90 days."
+      },
+      {
+        "index": "4",
+        "text": "45 days."
+      }
+    ],
+    "chosenAnswer": "60 days.",
+    "correctAnswer": "90 days.",
+    "explanation": "Your M1 licence is only valid for 90 days, so it is a good idea to book your Level One road test early so you can complete it before your M1 licence expires."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 19,
+    "question": "To legally drive a motorcycle, the driver must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "have an M1, M2 or M licence."
+      },
+      {
+        "index": "2",
+        "text": "have a valid licence plate."
+      },
+      {
+        "index": "3",
+        "text": "be at least 16 years old."
+      },
+      {
+        "index": "4",
+        "text": "meet all of the above requirements."
+      }
+    ],
+    "chosenAnswer": "have an M1, M2 or M licence.",
+    "correctAnswer": "meet all of the above requirements.",
+    "explanation": "To legally drive a motorcycle in Ontario, you must be at least 16 years old and have a valid motorcycle licence, and a licence plate must be attached to the rear of your vehicle."
+  },
+  {
+    "testName": "m1-practice-test-4",
+    "questionNumber": 20,
+    "question": "While you hold an M1 licence, you may NOT drive",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "from midnight to 5 a.m."
+      },
+      {
+        "index": "2",
+        "text": "from one hour after sunset to one hour before sunrise."
+      },
+      {
+        "index": "3",
+        "text": "from one-half hour after sunset to one-half hour before sunrise."
+      },
+      {
+        "index": "4",
+        "text": "from 10 p.m. to 6 a.m."
+      }
+    ],
+    "chosenAnswer": "from midnight to 5 a.m.",
+    "correctAnswer": "from one-half hour after sunset to one-half hour before sunrise.",
+    "explanation": "While you hold an M1 licence, you may NOT drive from one-half hour after sunset to one-half hour before sunrise. There are also other restrictions on your driving."
+  }
+]

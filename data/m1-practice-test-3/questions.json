@@ -1,0 +1,1082 @@
+[
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 1,
+    "question": "You should not drive your motorcycle alongside cars because",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007230416286656.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "your motorcycle might skid."
+      },
+      {
+        "index": "2",
+        "text": "you might be in a blind spot."
+      },
+      {
+        "index": "3",
+        "text": "a car driver might not be able to turn."
+      },
+      {
+        "index": "4",
+        "text": "a car driver's visibility might be reduced."
+      }
+    ],
+    "chosenAnswer": "your motorcycle might skid.",
+    "correctAnswer": "you might be in a blind spot.",
+    "explanation": "It can be dangerous to drive alongside cars because you might be riding in their blind spots."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 2,
+    "question": "A centre lane that is marked on each side by a solid yellow line and a broken yellow line is reserved for _________ and can be used by vehicles travelling in either direction.",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202001301806403967.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "making left turns"
+      },
+      {
+        "index": "2",
+        "text": "passing"
+      },
+      {
+        "index": "3",
+        "text": "faster traffic"
+      },
+      {
+        "index": "4",
+        "text": "making right turns"
+      }
+    ],
+    "chosenAnswer": "making left turns",
+    "correctAnswer": "making left turns",
+    "explanation": "This is a shared centre lane, also known as a shared left-turn lane. Vehicles in either direction may use this lane only to make a left turn (or a U-turn where permitted). Use this lane with caution because vehicles travelling in the opposite direction may use it, too."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 3,
+    "question": "If a large animal suddenly runs in front of your motorcycle, you should",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007251637032969.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "do your best to swerve around it."
+      },
+      {
+        "index": "2",
+        "text": "jump off the motorcycle."
+      },
+      {
+        "index": "3",
+        "text": "sound your horn and proceed."
+      },
+      {
+        "index": "4",
+        "text": "brake as hard as you can."
+      }
+    ],
+    "chosenAnswer": "do your best to swerve around it.",
+    "correctAnswer": "do your best to swerve around it.",
+    "explanation": "If you cannot stop in time and the animal is large, such as a dog or moose, you may have no choice but to swerve; if you are in traffic, try to stay in your lane. However, if the animal is small, you have a better chance of surviving an impact with it than with another vehicle."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 4,
+    "question": "The rear brake is controlled by",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the right hand lever."
+      },
+      {
+        "index": "2",
+        "text": "a button on the handgrip."
+      },
+      {
+        "index": "3",
+        "text": "the left hand lever."
+      },
+      {
+        "index": "4",
+        "text": "a foot pedal."
+      }
+    ],
+    "chosenAnswer": "the right hand lever.",
+    "correctAnswer": "a foot pedal.",
+    "explanation": "The rear brake is controlled by the right foot pedal. The front brake is controlled by the right hand lever."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 5,
+    "question": "You had to make an emergency stop. How can you notify other drivers that you need help?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Put your helmet on the ground near the road."
+      },
+      {
+        "index": "2",
+        "text": "Honk your horn once in a while."
+      },
+      {
+        "index": "3",
+        "text": "Leave your engine running."
+      },
+      {
+        "index": "4",
+        "text": "Stand on the shoulder of the road and wave to passing drivers."
+      }
+    ],
+    "chosenAnswer": "Put your helmet on the ground near the road.",
+    "correctAnswer": "Put your helmet on the ground near the road.",
+    "explanation": "If you must make an emergency stop, pull your motorcycle off the road as far as possible. If you need help, place your helmet on the ground near the road. This is a signal among motorcycle drivers that a motorcyclist needs help."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 6,
+    "question": "If a dog starts to chase you while you are riding, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "kick the dog."
+      },
+      {
+        "index": "2",
+        "text": "stop until the owner is found."
+      },
+      {
+        "index": "3",
+        "text": "call animal control services."
+      },
+      {
+        "index": "4",
+        "text": "approach the animal and then speed away."
+      }
+    ],
+    "chosenAnswer": "kick the dog.",
+    "correctAnswer": "approach the animal and then speed away.",
+    "explanation": "If a dog starts to chase you, you should approach the animal and then speed away. This should stop the dog from chasing you."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 7,
+    "question": "What must you do at a flashing red traffic signal?",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202003051722347868.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Proceed with caution; the traffic signal is out of order."
+      },
+      {
+        "index": "2",
+        "text": "Stop and do not proceed until the signal stops flashing."
+      },
+      {
+        "index": "3",
+        "text": "Stop and yield as you would at a stop sign."
+      },
+      {
+        "index": "4",
+        "text": "Proceed straight through; you cannot turn left or right at a flashing red signal."
+      }
+    ],
+    "chosenAnswer": "Proceed with caution; the traffic signal is out of order.",
+    "correctAnswer": "Stop and yield as you would at a stop sign.",
+    "explanation": "You must treat a flashing red signal like a stop sign. That is, you must stop before entering the intersection or crosswalk, yield to traffic and pedestrians, and then proceed when it is safe to do so."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 8,
+    "question": "The best way to deal with a tailgater is to",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202006041812161292.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "increase your speed."
+      },
+      {
+        "index": "2",
+        "text": "call the police."
+      },
+      {
+        "index": "3",
+        "text": "honk your horn."
+      },
+      {
+        "index": "4",
+        "text": "let the tailgater pass you."
+      }
+    ],
+    "chosenAnswer": "increase your speed.",
+    "correctAnswer": "let the tailgater pass you.",
+    "explanation": "If you are being tailgated, try to get the tailgater in front of you. (You are safer with the tailgater in front of you than right behind you.) Change lanes if possible, slow down, and encourage the tailgater behind you to pass. Don't increase your speed in an attempt to appease or outdistance the tailgater. No speed is too fast for some tailgaters."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 9,
+    "question": "What do these pavement markings mean?",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202001301806403967.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Vehicles travelling in either direction can make left turns."
+      },
+      {
+        "index": "2",
+        "text": "This is a one-way road."
+      },
+      {
+        "index": "3",
+        "text": "This is a three-way road."
+      },
+      {
+        "index": "4",
+        "text": "Vehicles travelling in either direction can make right turns."
+      }
+    ],
+    "chosenAnswer": "Vehicles travelling in either direction can make left turns.",
+    "correctAnswer": "Vehicles travelling in either direction can make left turns.",
+    "explanation": "This is a shared centre lane, also known as a shared left-turn lane. Vehicles in either direction may use this lane only to make a left turn (or a U-turn where permitted). Use this lane with caution because vehicles travelling in the opposite direction may use it, too."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 10,
+    "question": "How can you stop quickly on a slippery road?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Use the rear brake only."
+      },
+      {
+        "index": "2",
+        "text": "Use the front brake only."
+      },
+      {
+        "index": "3",
+        "text": "Stop braking and coast to a stop."
+      },
+      {
+        "index": "4",
+        "text": "Use threshold braking."
+      }
+    ],
+    "chosenAnswer": "Use the rear brake only.",
+    "correctAnswer": "Use threshold braking.",
+    "explanation": "Pull in the clutch and apply both brakes quickly and smoothly but without locking the wheels (or without ABS kicking in if your motorcycle has ABS brakes). If either wheel locks, release the brake momentarily to get the wheel rolling, then re-apply the brakes but not to the point of locking. This is called threshold braking."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 11,
+    "question": "If you are approaching an intersection at which the traffic lights are not working, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "treat the intersection like an all-way stop."
+      },
+      {
+        "index": "2",
+        "text": "yield to the traffic on your right."
+      },
+      {
+        "index": "3",
+        "text": "stop, yield to cross traffic, and then proceed."
+      },
+      {
+        "index": "4",
+        "text": "slow down and proceed with caution."
+      }
+    ],
+    "chosenAnswer": "treat the intersection like an all-way stop.",
+    "correctAnswer": "treat the intersection like an all-way stop.",
+    "explanation": "During an electrical failure, traffic lights at intersections will not work. Proceed cautiously and use the intersection the same way you would use an intersection with all-way stop signs."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 12,
+    "question": "To maintain adequate control of your motorcycle, your arms should be positioned",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "with elbows and wrists locked."
+      },
+      {
+        "index": "2",
+        "text": "at a 90-degree angle."
+      },
+      {
+        "index": "3",
+        "text": "with elbows slightly bent and wrists low."
+      },
+      {
+        "index": "4",
+        "text": "with elbows and wrists high."
+      }
+    ],
+    "chosenAnswer": "with elbows and wrists locked.",
+    "correctAnswer": "with elbows slightly bent and wrists low.",
+    "explanation": "To maintain adequate control of the motorcycle, your arms should be positioned with elbows slightly bent and wrists low to prevent you from increasing your speed by mistake."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 13,
+    "question": "What does a double solid yellow line in the centre of a two-lane road mean?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Passing is not permitted."
+      },
+      {
+        "index": "2",
+        "text": "Passing is permitted at night."
+      },
+      {
+        "index": "3",
+        "text": "Passing is permitted anytime."
+      },
+      {
+        "index": "4",
+        "text": "Passing is permitted during the day."
+      }
+    ],
+    "chosenAnswer": "Passing is not permitted.",
+    "correctAnswer": "Passing is not permitted.",
+    "explanation": "A double solid yellow line in the centre of a two-lane road means that no passing is allowed on either side."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 14,
+    "question": "You are riding along the road and get an insect smeared on your face shield that obscures your view. What should you do?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Stop immediately and clear off your face shield."
+      },
+      {
+        "index": "2",
+        "text": "Pull up the face shield and continue driving."
+      },
+      {
+        "index": "3",
+        "text": "Speed up to get to your destination faster."
+      },
+      {
+        "index": "4",
+        "text": "Pull off the road when it is safe and clear off your face shield."
+      }
+    ],
+    "chosenAnswer": "Stop immediately and clear off your face shield.",
+    "correctAnswer": "Pull off the road when it is safe and clear off your face shield.",
+    "explanation": "From time to time, insects, cigarette butts thrown from other vehicles or stones kicked up by the tires of the vehicle ahead may hit you. If you are not wearing face protection, you could be hit in the eye or the face. If you are wearing face protection, it could become smeared or cracked, making it difficult to see. Whatever happens, do not let it affect your control of your motorcycle or moped. Keep your eyes on the road and your hands on the handlebars. As soon as it is safe, pull off the road and repair the damage."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 15,
+    "question": "To cross a railway crossing safely, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "look both ways only if the signals are flashing."
+      },
+      {
+        "index": "2",
+        "text": "do it quickly but back up if you notice a train."
+      },
+      {
+        "index": "3",
+        "text": "first park within 10 feet of the crossing."
+      },
+      {
+        "index": "4",
+        "text": "look both ways for an approaching train and listen carefully."
+      }
+    ],
+    "chosenAnswer": "look both ways only if the signals are flashing.",
+    "correctAnswer": "look both ways for an approaching train and listen carefully.",
+    "explanation": "Look both ways as you approach a railway crossing, even if the flashing signal is not functioning. Never stop your vehicle when any part of your vehicle is on the track. When in traffic, never proceed across the tracks unless the opposite side has adequate room for the full length of your vehicle. Never drive around lowered gates or fail to heed a warning signal, even if you can’t see a train approaching. Also keep in mind that trains are at least two metres wider than the tracks that they run on, so you don't want to be too close."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 16,
+    "question": "The front brake is operated by",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the right hand lever."
+      },
+      {
+        "index": "2",
+        "text": "the right foot pedal."
+      },
+      {
+        "index": "3",
+        "text": "the left foot lever."
+      },
+      {
+        "index": "4",
+        "text": "the left hand lever."
+      }
+    ],
+    "chosenAnswer": "the right hand lever.",
+    "correctAnswer": "the right hand lever.",
+    "explanation": "The front brake is operated by the right hand lever. The left hand lever controls the clutch. The right foot pedal is for the rear brake, and the left foot lever is the gear shifter."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 17,
+    "question": "Weaving when riding over a metal grating",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007230512355052.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "is not hazardous."
+      },
+      {
+        "index": "2",
+        "text": "is dangerous to motorcycle riders."
+      },
+      {
+        "index": "3",
+        "text": "is caused by poor motorcycle skills."
+      },
+      {
+        "index": "4",
+        "text": "is harmful to the motorcycle."
+      }
+    ],
+    "chosenAnswer": "is not hazardous.",
+    "correctAnswer": "is not hazardous.",
+    "explanation": "Weaving caused by riding over a metal grating is usually not hazardous. Relax and stay on course."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 18,
+    "question": "Tire pressure ________ at lower temperatures.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "decreases"
+      },
+      {
+        "index": "2",
+        "text": "stays the same"
+      },
+      {
+        "index": "3",
+        "text": "increases"
+      },
+      {
+        "index": "4",
+        "text": "increases or decreases"
+      }
+    ],
+    "chosenAnswer": "decreases",
+    "correctAnswer": "decreases",
+    "explanation": "Checking tire pressure is recommended every time you drive. Proper tire pressure means safer driving and longer-lasting tires. Use an air-pressure gauge to get accurate readings. Keep in mind that tire pressures decrease when the tires are cold."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 19,
+    "question": "When starting on a hill, you should use ________ to hold the motorcycle while you start the engine and shift into first gear.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the rear brake"
+      },
+      {
+        "index": "2",
+        "text": "your feet"
+      },
+      {
+        "index": "3",
+        "text": "the clutch"
+      },
+      {
+        "index": "4",
+        "text": "the front brake"
+      }
+    ],
+    "chosenAnswer": "the rear brake",
+    "correctAnswer": "the front brake",
+    "explanation": "When starting on a hill, use the front brake to hold your motorcycle while you start the engine and shift into first gear. Change to the rear brake to hold your vehicle while you operate the throttle with your right hand. Slowly open the throttle for more power and slowly release the clutch. (If you release it too quickly, the front wheel may lift off the ground or the engine may stall.) Ease off the rear brake as the engine slows down and engages."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 20,
+    "question": "When you're preparing to pass the vehicle in front of you, you can increase your line of sight by riding in",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "the right tire track position."
+      },
+      {
+        "index": "2",
+        "text": "any lane position."
+      },
+      {
+        "index": "3",
+        "text": "the left tire track position."
+      },
+      {
+        "index": "4",
+        "text": "the centre of your lane."
+      }
+    ],
+    "chosenAnswer": "the right tire track position.",
+    "correctAnswer": "the left tire track position.",
+    "explanation": "To increase your line of sight when passing the vehicle ahead of you, drive in the left portion of your lane (left tire track position). This will let you see beyond the vehicle in front of you and spot oncoming hazards. It will also make your pass more visible to the driver of the vehicle."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 21,
+    "question": "When riding over metal gratings or rutted pavement, you should",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007230512355052.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "stop and walk your motorcycle across."
+      },
+      {
+        "index": "2",
+        "text": "increase your speed."
+      },
+      {
+        "index": "3",
+        "text": "use your high-beam headlight."
+      },
+      {
+        "index": "4",
+        "text": "keep a gentle but firm grip on the handlebars."
+      }
+    ],
+    "chosenAnswer": "stop and walk your motorcycle across.",
+    "correctAnswer": "keep a gentle but firm grip on the handlebars.",
+    "explanation": "When you ride over grooved or rutted pavement or metal gratings, you may feel as though you are losing control of your motorcycle. This effect is greater on smaller vehicles than it is on larger ones; the smaller your vehicle, the larger the effect. Avoid overreacting. Keep a gentle but firm grip on the handlebars and drive as smoothly as you can, choosing the best route possible until you get back on a good surface."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 22,
+    "question": "When should a passenger get on a motorcycle?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "After the engine has been started"
+      },
+      {
+        "index": "2",
+        "text": "Before the engine has been started"
+      },
+      {
+        "index": "3",
+        "text": "Before the driver"
+      },
+      {
+        "index": "4",
+        "text": "While it is still on the kickstand"
+      }
+    ],
+    "chosenAnswer": "After the engine has been started",
+    "correctAnswer": "After the engine has been started",
+    "explanation": "A passenger should get on a motorcycle only after the motorcyclist has mounted and started it."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 23,
+    "question": "A \"blocking position\"",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "blocks your view."
+      },
+      {
+        "index": "2",
+        "text": "encourages other drivers to share your lane."
+      },
+      {
+        "index": "3",
+        "text": "discourages other drivers from sharing your lane."
+      },
+      {
+        "index": "4",
+        "text": "is for blocking other traffic."
+      }
+    ],
+    "chosenAnswer": "blocks your view.",
+    "correctAnswer": "discourages other drivers from sharing your lane.",
+    "explanation": "Usually the best lane position is a little to the left or right of the centre of your lane (left or right \"tire track position\"). It is also called the “blocking position” because it blocks or discourages other drivers from trying to squeeze past you in the same lane."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 24,
+    "question": "If you miss your exit on a highway, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "back up to your exit."
+      },
+      {
+        "index": "2",
+        "text": "continue to the next exit."
+      },
+      {
+        "index": "3",
+        "text": "make a U-turn."
+      },
+      {
+        "index": "4",
+        "text": "stop."
+      }
+    ],
+    "chosenAnswer": "back up to your exit.",
+    "correctAnswer": "continue to the next exit.",
+    "explanation": "If you miss your exit on a highway, don't stop, back up, or try to turn around. Doing so greatly increases the likelihood of a collision. Instead, take the next exit and re-enter the highway to return to the exit you missed."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 25,
+    "question": "A single broken yellow line usually marks the centreline of a two-way roadway where",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007151939184445.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "changing lanes is not allowed."
+      },
+      {
+        "index": "2",
+        "text": "driving on the other side of the line is allowed."
+      },
+      {
+        "index": "3",
+        "text": "passing is allowed if the way is clear."
+      },
+      {
+        "index": "4",
+        "text": "passing is prohibited."
+      }
+    ],
+    "chosenAnswer": "changing lanes is not allowed.",
+    "correctAnswer": "passing is allowed if the way is clear.",
+    "explanation": "A single broken yellow line usually marks the centreline of a two-way roadway on which a vehicle may pass if it is safe."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 26,
+    "question": "On a highway, when may you ride at the maximum speed limit?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Only if you can stop safely"
+      },
+      {
+        "index": "2",
+        "text": "On any highway designed for one-way traffic"
+      },
+      {
+        "index": "3",
+        "text": "At any time"
+      },
+      {
+        "index": "4",
+        "text": "Only in the daytime"
+      }
+    ],
+    "chosenAnswer": "Only if you can stop safely",
+    "correctAnswer": "Only if you can stop safely",
+    "explanation": "Obey the maximum speed limit posted on signs along the road, but always ride at a speed that will let you stop safely. This means riding below the maximum speed limit in bad weather, heavy traffic, or construction zones."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 27,
+    "question": "If your throttle is stuck and twisting it back and forth does not release it, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "apply both brakes."
+      },
+      {
+        "index": "2",
+        "text": "use engine braking."
+      },
+      {
+        "index": "3",
+        "text": "operate the engine kill switch."
+      },
+      {
+        "index": "4",
+        "text": "use the front brake only."
+      }
+    ],
+    "chosenAnswer": "apply both brakes.",
+    "correctAnswer": "operate the engine kill switch.",
+    "explanation": "If your throttle is stuck and twisting it does not release it, operate the engine kill switch and pull in the clutch at the same time. This will cut power to the rear wheel."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 28,
+    "question": "Which of the following statements about railway crossings is FALSE?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Never drive around crossing gates."
+      },
+      {
+        "index": "2",
+        "text": "Watch out for more than one train."
+      },
+      {
+        "index": "3",
+        "text": "You can shift gears on the crossing."
+      },
+      {
+        "index": "4",
+        "text": "Always stop when a train is close to the crossing."
+      }
+    ],
+    "chosenAnswer": "Never drive around crossing gates.",
+    "correctAnswer": "You can shift gears on the crossing.",
+    "explanation": "Don't try to cross the tracks until you can cross them without stopping or shifting gears (because your vehicle might stall on the tracks). If the crossing gates are down, stop and remain stopped until the gates are raised. Always stop when a train is close to the crossing. A train cannot yield the right-of-way to you."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 29,
+    "question": "If the signal light changes from green to yellow (amber) as you approach the intersection, what should you do?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Stop. If a stop cannot be made safely, proceed with caution."
+      },
+      {
+        "index": "2",
+        "text": "Continue through the intersection without slowing or stopping."
+      },
+      {
+        "index": "3",
+        "text": "Sound your horn to warn pedestrians and other drivers that you do not intend to stop."
+      },
+      {
+        "index": "4",
+        "text": "Speed up to clear the intersection as quickly as possible."
+      }
+    ],
+    "chosenAnswer": "Stop. If a stop cannot be made safely, proceed with caution.",
+    "correctAnswer": "Stop. If a stop cannot be made safely, proceed with caution.",
+    "explanation": "If the signal light changes to yellow (amber) as you're approaching it, stop. Only if a stop cannot be made safely should you proceed with caution into the intersection."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 30,
+    "question": "You are in danger of hitting an object and need to swerve to avoid it. What is the best way to initiate a swerve?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Lean sharply in the opposite direction from which you need to swerve."
+      },
+      {
+        "index": "2",
+        "text": "Apply a small amount of pressure to the handgrip on the side of your intended swerve."
+      },
+      {
+        "index": "3",
+        "text": "Apply a small amount of pressure to the handgrip on the side opposite to your intended swerve."
+      },
+      {
+        "index": "4",
+        "text": "Lean sharply in the direction in which you need to swerve."
+      }
+    ],
+    "chosenAnswer": "Lean sharply in the opposite direction from which you need to swerve.",
+    "correctAnswer": "Apply a small amount of pressure to the handgrip on the side of your intended swerve.",
+    "explanation": "If you are in danger of hitting an object, the best way to initiate a swerve is to apply a small amount of pressure to the handgrip on the side of your intended swerve. This will cause the motorcycle to lean quickly in that direction."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 31,
+    "question": "While driving in the right lane, you see a bus leaving the bus bay with its left-turn signals flashing. You should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "honk your horn and pass the bus quickly."
+      },
+      {
+        "index": "2",
+        "text": "slow down or stop to yield the right-of-way to the bus."
+      },
+      {
+        "index": "3",
+        "text": "speed up and pass the bus."
+      },
+      {
+        "index": "4",
+        "text": "disregard the bus."
+      }
+    ],
+    "chosenAnswer": "honk your horn and pass the bus quickly.",
+    "correctAnswer": "slow down or stop to yield the right-of-way to the bus.",
+    "explanation": "When a bus in a bus bay begins flashing its left-turn signals, indicating that it is ready to leave the bus bay, and you are approaching in the lane adjacent to the bus bay, you must allow the bus to re-enter traffic. Yielding the right-of-way to buses in this situation is the law."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 32,
+    "question": "If you need to shift gears as you approach a turn,",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "shift gears after the turn."
+      },
+      {
+        "index": "2",
+        "text": "you do not need to shift gears for a turn."
+      },
+      {
+        "index": "3",
+        "text": "shift gears before the turn."
+      },
+      {
+        "index": "4",
+        "text": "shift gears in the turn."
+      }
+    ],
+    "chosenAnswer": "shift gears after the turn.",
+    "correctAnswer": "shift gears before the turn.",
+    "explanation": "If you need to shift gears as you approach a turn, you should do it before the turn if possible. This will help keep the turn smooth and stable. A sudden change in power to the rear wheel during a turn can cause a skid."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 33,
+    "question": "What can cause the engine to lock?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "The front tire skidding"
+      },
+      {
+        "index": "2",
+        "text": "Being low on oil"
+      },
+      {
+        "index": "3",
+        "text": "Braking with only one brake"
+      },
+      {
+        "index": "4",
+        "text": "Shifting gears improperly"
+      }
+    ],
+    "chosenAnswer": "The front tire skidding",
+    "correctAnswer": "Being low on oil",
+    "explanation": "If an engine locks, it is likely low on oil. Always check your oil before beginning a trip. If needed, add oil as soon as possible or else the engine may seize."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 34,
+    "question": "You must NOT pass",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "when approaching a hill or curve where there is no clear visibility."
+      },
+      {
+        "index": "2",
+        "text": "a school bus ahead with flashing red lights and an extended stop arm."
+      },
+      {
+        "index": "3",
+        "text": "if there is a solid yellow line next to your lane."
+      },
+      {
+        "index": "4",
+        "text": "in any of the above situations."
+      }
+    ],
+    "chosenAnswer": "when approaching a hill or curve where there is no clear visibility.",
+    "correctAnswer": "in any of the above situations.",
+    "explanation": "A solid yellow line indicates a no-passing zone. You are not allowed to pass if there is a solid yellow line next to your lane. It is also illegal to pass a stopped school bus with flashing red lights and an extended stop arm. Also, do not pass when approaching a hill or curve where there is no clear visibility."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 35,
+    "question": "When driving at night, you should follow which of the following rules?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Don’t overdrive your headlight."
+      },
+      {
+        "index": "2",
+        "text": "Wear a tinted face shield."
+      },
+      {
+        "index": "3",
+        "text": "Wear dark clothing."
+      },
+      {
+        "index": "4",
+        "text": "Do all of the above."
+      }
+    ],
+    "chosenAnswer": "Don’t overdrive your headlight.",
+    "correctAnswer": "Don’t overdrive your headlight.",
+    "explanation": "You are overdriving your headlight when you travel so fast that your stopping distance is farther than you can see with your headlight. This is a dangerous thing to do, because you are not giving yourself enough room to make a safe stop. In the dark, you have no way of knowing what lies beyond the reach of your headlight."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 36,
+    "question": "When passing a line of parked cars on your right, you should",
+    "questionImageUrl": "https://www.g1.ca/wp-content/uploads/autotest/202007231053196115.jpg",
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "ride close to the cars so their drivers can see you."
+      },
+      {
+        "index": "2",
+        "text": "swerve from side to side so no one will try to share your lane."
+      },
+      {
+        "index": "3",
+        "text": "ride in the left tire track position."
+      },
+      {
+        "index": "4",
+        "text": "ride as slowly as possible."
+      }
+    ],
+    "chosenAnswer": "ride close to the cars so their drivers can see you.",
+    "correctAnswer": "ride in the left tire track position.",
+    "explanation": "When passing a line of parked cars on your right, you should ride in the left tire track position to be farthest away from hazards associated with parked cars."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 37,
+    "question": "When driving in fog, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "increase your following distance."
+      },
+      {
+        "index": "2",
+        "text": "use your low-beam headlight."
+      },
+      {
+        "index": "3",
+        "text": "slow down."
+      },
+      {
+        "index": "4",
+        "text": "do all of the above."
+      }
+    ],
+    "chosenAnswer": "increase your following distance.",
+    "correctAnswer": "do all of the above.",
+    "explanation": "Turn on your low-beam headlight whenever visibility is reduced, such as in bad weather. Don't use your high-beam headlight in bad weather. The bright light can reflect off fog, rain or snow and cause glare. However, if fog becomes so dense that you cannot see even 10 seconds ahead, pull off the road and stop in a safe place. Remember: If you can't see, you can't drive."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 38,
+    "question": "Which of the following statements are true about sharing the road with large trucks?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Stay in the left lane if a large truck ahead is making a left turn."
+      },
+      {
+        "index": "2",
+        "text": "Large trucks have shorter stopping distances."
+      },
+      {
+        "index": "3",
+        "text": "Large trucks create heavy turbulence that may affect your ability to control your motorcycle."
+      },
+      {
+        "index": "4",
+        "text": "All of the above statements are true."
+      }
+    ],
+    "chosenAnswer": "Stay in the left lane if a large truck ahead is making a left turn.",
+    "correctAnswer": "Large trucks create heavy turbulence that may affect your ability to control your motorcycle.",
+    "explanation": "A large vehicle can create heavy turbulence that can seriously affect your ability to control your vehicle when you are passing the larger one. If you must pass a large vehicle, try to relax and work with the air turbulence. Do not drive in the left lane when a large vehicle is making a left turn in front of you. Stay well back until the truck has cleared the turn, or else you might get squeezed between the truck and the curb. Keep in mind that large trucks require much longer stopping distances. When you pass a large truck, don't cut right in front of it. If you cut right in front of the truck and then have to slow down suddenly for some reason, the truck may not have enough space to avoid rear-ending you. Wait until you are well ahead of the truck before you merge back in front of it."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 39,
+    "question": "You have a green light and you want to go straight through the intersection, but other vehicles are blocking the intersection on the other side. What should you do?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Don't enter the intersection until the other vehicles have cleared it."
+      },
+      {
+        "index": "2",
+        "text": "Merge into another lane and try to go around the other vehicles."
+      },
+      {
+        "index": "3",
+        "text": "Enter the intersection and honk your horn to let the other drivers know you are there."
+      },
+      {
+        "index": "4",
+        "text": "Enter the intersection and wait for the other vehicles to clear it."
+      }
+    ],
+    "chosenAnswer": "Don't enter the intersection until the other vehicles have cleared it.",
+    "correctAnswer": "Don't enter the intersection until the other vehicles have cleared it.",
+    "explanation": "Never block an intersection. Even if the light is green, don't proceed into the intersection if you can't get through it. Instead, wait until the other side of the intersection is clear before you proceed."
+  },
+  {
+    "testName": "m1-practice-test-3",
+    "questionNumber": 40,
+    "question": "To warn drivers that you are slowing down in an unusual place, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "flash your brake light."
+      },
+      {
+        "index": "2",
+        "text": "shift gears instead of braking."
+      },
+      {
+        "index": "3",
+        "text": "rise slightly off your seat."
+      },
+      {
+        "index": "4",
+        "text": "swerve from side to side."
+      }
+    ],
+    "chosenAnswer": "flash your brake light.",
+    "correctAnswer": "flash your brake light.",
+    "explanation": "To warn drivers that you are slowing down in an unusual place, tap the brake pedal to flash your brake light to the driver behind you."
+  }
+]

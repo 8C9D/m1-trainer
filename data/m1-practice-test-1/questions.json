@@ -1,0 +1,1082 @@
+[
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 1,
+    "question": "Due to excessive sand and gravel, the motorcycle rider must not drive",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "along the middle of the lane."
+      },
+      {
+        "index": "2",
+        "text": "near the left edge of the right lane."
+      },
+      {
+        "index": "3",
+        "text": "near the right edge of the left lane."
+      },
+      {
+        "index": "4",
+        "text": "along the side of the pavement."
+      }
+    ],
+    "chosenAnswer": "along the middle of the lane.",
+    "correctAnswer": "along the side of the pavement.",
+    "explanation": "Sand and gravel usually collect along the side of the pavement."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 2,
+    "question": "To keep a motorcycle in good working condition, what formula must be followed by the driver every day?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "10-point check-up formula"
+      },
+      {
+        "index": "2",
+        "text": "12-point check-up formula"
+      },
+      {
+        "index": "3",
+        "text": "15-point check-up formula"
+      },
+      {
+        "index": "4",
+        "text": "5-point check-up formula"
+      }
+    ],
+    "chosenAnswer": "10-point check-up formula",
+    "correctAnswer": "10-point check-up formula",
+    "explanation": "Before starting the motorcycle, every motorcycle rider must perform a daily check-up by following a 10-point formula."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 3,
+    "question": "Incorrect use of gears can result in accidents when",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "downshifting, turning, or starting on hills."
+      },
+      {
+        "index": "2",
+        "text": "riding with a passenger on two-way roads."
+      },
+      {
+        "index": "3",
+        "text": "changing gears on plain roads."
+      },
+      {
+        "index": "4",
+        "text": "riding in heavy traffic."
+      }
+    ],
+    "chosenAnswer": "downshifting, turning, or starting on hills.",
+    "correctAnswer": "downshifting, turning, or starting on hills.",
+    "explanation": "There is more to shifting gears than simply getting the motorcycle to accelerate smoothly. Accidents can occur if the gears are used incorrectly, when downshifting, turning, or starting on hills."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 4,
+    "question": "If you are a fully licensed driver 21 years of age and over and if you register a BAC ____ , you will receive an immediate seven-day licence suspension for a first offence.",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "from .03 to .04"
+      },
+      {
+        "index": "2",
+        "text": "from .01 to .03"
+      },
+      {
+        "index": "3",
+        "text": "from .08 to .09"
+      },
+      {
+        "index": "4",
+        "text": "from .05 to .08"
+      }
+    ],
+    "chosenAnswer": "from .03 to .04",
+    "correctAnswer": "from .05 to .08",
+    "explanation": "If you register a BAC from .05 to .08 (known as the “warn range”), you will receive an immediate driver’s licence suspension. For a first occurrence, you will be suspended for seven days."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 5,
+    "question": "How much stopping power is provided by the rear brake?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Three quarters of total stopping power"
+      },
+      {
+        "index": "2",
+        "text": "Half of total stopping power"
+      },
+      {
+        "index": "3",
+        "text": "One quarter of total stopping power"
+      },
+      {
+        "index": "4",
+        "text": "No stopping power"
+      }
+    ],
+    "chosenAnswer": "Three quarters of total stopping power",
+    "correctAnswer": "One quarter of total stopping power",
+    "explanation": "Only one quarter of the total stopping power is provided by the rear brake."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 6,
+    "question": "When a motorcycle rider approaches a railway crossing and the signal lights are flashing, what should s/he do?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Stop 5 metres away from the nearest track."
+      },
+      {
+        "index": "2",
+        "text": "Stop the motorcycle 15 metres away from the nearest track."
+      },
+      {
+        "index": "3",
+        "text": "Cross the rail track with a speed of 80 km/h."
+      },
+      {
+        "index": "4",
+        "text": "Stop 12 metres from the farthest track."
+      }
+    ],
+    "chosenAnswer": "Stop 5 metres away from the nearest track.",
+    "correctAnswer": "Stop 5 metres away from the nearest track.",
+    "explanation": "Motorcyclists must maintain 5-metres' distance from the nearest railway track at railway crossings."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 7,
+    "question": "If a motorcycle rider wishes to stop his/her vehicle, while stopping, s/he must watch for traffic",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "in front of the motorcycle."
+      },
+      {
+        "index": "2",
+        "text": "in the left lane."
+      },
+      {
+        "index": "3",
+        "text": "behind the motorcycle."
+      },
+      {
+        "index": "4",
+        "text": "in the right lane."
+      }
+    ],
+    "chosenAnswer": "in front of the motorcycle.",
+    "correctAnswer": "behind the motorcycle.",
+    "explanation": "When a rider wants to stop his/her motorcycle, s/he must watch the traffic behind before taking the next steps."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 8,
+    "question": "Alcohol can impair the driver's ability to",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "turn the motorcycle at night."
+      },
+      {
+        "index": "2",
+        "text": "control the motorcycle."
+      },
+      {
+        "index": "3",
+        "text": "stop the motorcycle."
+      },
+      {
+        "index": "4",
+        "text": "All of the above"
+      }
+    ],
+    "chosenAnswer": "turn the motorcycle at night.",
+    "correctAnswer": "All of the above",
+    "explanation": "Alcohol impairs the driver's ability to control, turn, or stop the motorcycle."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 9,
+    "question": "The motorcyclist should avoid driving in which part of the lane when it is raining?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Left part of the lane"
+      },
+      {
+        "index": "2",
+        "text": "Centre of the lane"
+      },
+      {
+        "index": "3",
+        "text": "Right part of the lane"
+      },
+      {
+        "index": "4",
+        "text": "None of the above"
+      }
+    ],
+    "chosenAnswer": "Left part of the lane",
+    "correctAnswer": "Centre of the lane",
+    "explanation": "The centre part of the lane is more slippery due to oil and grease buildup. Motorcyclists should avoid that particular area in wet conditions."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 10,
+    "question": "In which of the following situations will the motorcycle rider need to shift his/her weight to the rear end?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "When the front tire blows"
+      },
+      {
+        "index": "2",
+        "text": "When the motorcycle loses its balance"
+      },
+      {
+        "index": "3",
+        "text": "When the rear tire blows"
+      },
+      {
+        "index": "4",
+        "text": "When s/he takes a turn"
+      }
+    ],
+    "chosenAnswer": "When the front tire blows",
+    "correctAnswer": "When the front tire blows",
+    "explanation": "If a front tire blows, the motorcyclist must try to steer straight and shift his/her weight to the rear to control the vehicle."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 11,
+    "question": "When a motorcycle rider wishes to enter a highway, s/he must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "take a special route for motorcycles."
+      },
+      {
+        "index": "2",
+        "text": "enter into the access path and then the merging area."
+      },
+      {
+        "index": "3",
+        "text": "merge into the traffic directly."
+      },
+      {
+        "index": "4",
+        "text": "enter with the lowest possible speed."
+      }
+    ],
+    "chosenAnswer": "take a special route for motorcycles.",
+    "correctAnswer": "enter into the access path and then the merging area.",
+    "explanation": "Motorcycle riders must enter into the access path and then into the acceleration zone and slowly merge into highway traffic."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 12,
+    "question": "The taillights of other vehicles are useful to motorists",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "to estimate the distance of the vehicle."
+      },
+      {
+        "index": "2",
+        "text": "to avoid blind spots of the vehicle."
+      },
+      {
+        "index": "3",
+        "text": "to see the bumps or rough pavement."
+      },
+      {
+        "index": "4",
+        "text": "to judge the speed of the vehicle."
+      }
+    ],
+    "chosenAnswer": "to estimate the distance of the vehicle.",
+    "correctAnswer": "to see the bumps or rough pavement.",
+    "explanation": "The vehicle's taillights can alert the motorist of any rough conditions of the road."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 13,
+    "question": "Motorcycle riders must not ride their vehicles",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "in the right lane."
+      },
+      {
+        "index": "2",
+        "text": "in the left lane."
+      },
+      {
+        "index": "3",
+        "text": "between two lanes."
+      },
+      {
+        "index": "4",
+        "text": "behind a passenger vehicle."
+      }
+    ],
+    "chosenAnswer": "in the right lane.",
+    "correctAnswer": "between two lanes.",
+    "explanation": "The motorcycle rider should never ride between two lanes, as each lane is designed for only one vehicle."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 14,
+    "question": "Which is a safer gear to use while going down a hill?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "The highest gear"
+      },
+      {
+        "index": "2",
+        "text": "Lower gear"
+      },
+      {
+        "index": "3",
+        "text": "Any gear"
+      },
+      {
+        "index": "4",
+        "text": "Higher gear"
+      }
+    ],
+    "chosenAnswer": "The highest gear",
+    "correctAnswer": "Lower gear",
+    "explanation": "Using a lower gear while going down a hill acts as a brake."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 15,
+    "question": "When a motorcycle bounces, the motorcycle rider can be protected from immediate danger by",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "removing his/her feet from the footpegs and balancing them."
+      },
+      {
+        "index": "2",
+        "text": "holding handgrips firmly."
+      },
+      {
+        "index": "3",
+        "text": "dragging the feet along the ground."
+      },
+      {
+        "index": "4",
+        "text": "bending the body into the proper direction."
+      }
+    ],
+    "chosenAnswer": "removing his/her feet from the footpegs and balancing them.",
+    "correctAnswer": "holding handgrips firmly.",
+    "explanation": "The driver must hold the handgrips firmly so as to not lose grip if the motorcycle bounces."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 16,
+    "question": "The area slightly to the left or the right of the centre of the lane is called the",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "tire track."
+      },
+      {
+        "index": "2",
+        "text": "tire travel."
+      },
+      {
+        "index": "3",
+        "text": "bike track."
+      },
+      {
+        "index": "4",
+        "text": "vehicle track."
+      }
+    ],
+    "chosenAnswer": "tire track.",
+    "correctAnswer": "tire track.",
+    "explanation": "This area is called the tire track, because all tires would travel in this area."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 17,
+    "question": "Motorcycle riders must maintain the following distance from other vehicles",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "5-seconds' distance"
+      },
+      {
+        "index": "2",
+        "text": "10-seconds' distance"
+      },
+      {
+        "index": "3",
+        "text": "2-3-seconds' distance"
+      },
+      {
+        "index": "4",
+        "text": "15-seconds' distance"
+      }
+    ],
+    "chosenAnswer": "5-seconds' distance",
+    "correctAnswer": "2-3-seconds' distance",
+    "explanation": "Motorcycle riders must maintain at least a 2-to-3-seconds' safe following distance from other vehicles."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 18,
+    "question": "A large seat and separate footrests are required on the motorcycle for",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "an animal."
+      },
+      {
+        "index": "2",
+        "text": "balancing the vehicle."
+      },
+      {
+        "index": "3",
+        "text": "a carrier or a saddlebag."
+      },
+      {
+        "index": "4",
+        "text": "a passenger."
+      }
+    ],
+    "chosenAnswer": "an animal.",
+    "correctAnswer": "a passenger.",
+    "explanation": "The motorcycle must be equipped with a larger seat and separate footrests for a passenger."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 19,
+    "question": "The motorcycle rider must check his/her mirrors every",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "4-5 seconds."
+      },
+      {
+        "index": "2",
+        "text": "5-7 seconds."
+      },
+      {
+        "index": "3",
+        "text": "1-2 seconds."
+      },
+      {
+        "index": "4",
+        "text": "9-10 seconds."
+      }
+    ],
+    "chosenAnswer": "4-5 seconds.",
+    "correctAnswer": "5-7 seconds.",
+    "explanation": "Motorcycle riders must check their mirrors every 5-7 seconds to watch the traffic behind them."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 20,
+    "question": "One of the causes of collisions at intersections is a vehicle making a left turn across your path. To cut down your chances of being hit,",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "approach slowly."
+      },
+      {
+        "index": "2",
+        "text": "move to the right."
+      },
+      {
+        "index": "3",
+        "text": "do both of the above."
+      },
+      {
+        "index": "4",
+        "text": "do neither of the above."
+      }
+    ],
+    "chosenAnswer": "approach slowly.",
+    "correctAnswer": "do both of the above.",
+    "explanation": "A vehicle making a left turn across your path is one of the leading causes of collisions at intersections. To cut down your chances of being hit, approach slowly and move to the right."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 21,
+    "question": "The motorcycle rider must use the following for correct stopping",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Front brake first and rear brake next"
+      },
+      {
+        "index": "2",
+        "text": "Only the front brake"
+      },
+      {
+        "index": "3",
+        "text": "Only the rear brake"
+      },
+      {
+        "index": "4",
+        "text": "Both brakes simultaneously"
+      }
+    ],
+    "chosenAnswer": "Front brake first and rear brake next",
+    "correctAnswer": "Both brakes simultaneously",
+    "explanation": "Always use both brakes simultaneously to decrease the stopping distance."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 22,
+    "question": "Perfect balance can be maintained by motorcycle riders by holding the knees firmly against the gas tank while",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "making turns."
+      },
+      {
+        "index": "2",
+        "text": "passing a car."
+      },
+      {
+        "index": "3",
+        "text": "increasing speed."
+      },
+      {
+        "index": "4",
+        "text": "crossing an intersection."
+      }
+    ],
+    "chosenAnswer": "making turns.",
+    "correctAnswer": "making turns.",
+    "explanation": "In order to maintain balance, every motorcycle rider must hold his/her knees firmly against the gas tank while making turns."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 23,
+    "question": "What is the purpose of using a helmet while riding a motorcycle?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "To protect the motorcyclist from rain and snow"
+      },
+      {
+        "index": "2",
+        "text": "To function as a balance for the motorcycle"
+      },
+      {
+        "index": "3",
+        "text": "To protect the motorcyclist from sun rays"
+      },
+      {
+        "index": "4",
+        "text": "To protect the motorcyclist from head injuries in case of a crash"
+      }
+    ],
+    "chosenAnswer": "To protect the motorcyclist from rain and snow",
+    "correctAnswer": "To protect the motorcyclist from head injuries in case of a crash",
+    "explanation": "As per Ontario law, every motorcycle rider and passenger must wear a proper helmet while moving on a motorcycle. It provides protection from head injuries during a collision."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 24,
+    "question": "The minimum age limit for applicants of a motorcycle driving licence is",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "14 years."
+      },
+      {
+        "index": "2",
+        "text": "11 years."
+      },
+      {
+        "index": "3",
+        "text": "10 years."
+      },
+      {
+        "index": "4",
+        "text": "16 years."
+      }
+    ],
+    "chosenAnswer": "14 years.",
+    "correctAnswer": "16 years.",
+    "explanation": "The minimum age requirement for the learner's licence is 16 years."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 25,
+    "question": "Which of the following will affect motorcycle riders more than four-wheel vehicle drivers?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Speed limit on highways"
+      },
+      {
+        "index": "2",
+        "text": "Roads and weather conditions"
+      },
+      {
+        "index": "3",
+        "text": "Visibility of oncoming vehicles"
+      },
+      {
+        "index": "4",
+        "text": "Blood alcohol content"
+      }
+    ],
+    "chosenAnswer": "Speed limit on highways",
+    "correctAnswer": "Roads and weather conditions",
+    "explanation": "Motorcycle riders are adversely affected by road and weather changes as they are not protected like four-wheel vehicle drivers are."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 26,
+    "question": "When entering a curve, you should",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "look as far around it as possible."
+      },
+      {
+        "index": "2",
+        "text": "reduce your speed before the curve."
+      },
+      {
+        "index": "3",
+        "text": "turn your head, not your shoulders, in the direction of the curve."
+      },
+      {
+        "index": "4",
+        "text": "do all of the above."
+      }
+    ],
+    "chosenAnswer": "look as far around it as possible.",
+    "correctAnswer": "do all of the above.",
+    "explanation": "As you enter the curve, look as far around it as possible. This helps you stay in a smooth line around the curve. If you look only at the road directly in front of you, you are likely to wander back and forth across the lane, constantly correcting your steering. On a curve with a short sight distance, drive in the tire track where you can see more of the road ahead. If the curve is to the left, use the right tire track. If the curve is to the right, keep as far left as possible while watching for oncoming traffic that might be cutting the curve short. You may also change tire tracks in order to drive through a more gradual curve than if you followed the full curve of the road."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 27,
+    "question": "Class M1 licensed motorcyclists driving at night should do the following to prevent accidents",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Class M1 licence holders are not allowed to drive at night."
+      },
+      {
+        "index": "2",
+        "text": "Reduce the speed"
+      },
+      {
+        "index": "3",
+        "text": "Wear reflective clothing"
+      },
+      {
+        "index": "4",
+        "text": "Maintain considerable distance from other vehicles"
+      }
+    ],
+    "chosenAnswer": "Class M1 licence holders are not allowed to drive at night.",
+    "correctAnswer": "Class M1 licence holders are not allowed to drive at night.",
+    "explanation": "Class M1 licence holders are not allowed to drive at night due to their insufficient experience."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 28,
+    "question": "What should the driver do when the motorcycle chain locks the rear wheel?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Apply brakes to stop the vehicle immediately."
+      },
+      {
+        "index": "2",
+        "text": "Maintain control and pull over immediately."
+      },
+      {
+        "index": "3",
+        "text": "Turn off and turn on the engine."
+      },
+      {
+        "index": "4",
+        "text": "Hit the brakes hard."
+      }
+    ],
+    "chosenAnswer": "Apply brakes to stop the vehicle immediately.",
+    "correctAnswer": "Maintain control and pull over immediately.",
+    "explanation": "When the chain locks the rear wheel, maintain control and pull over immediately."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 29,
+    "question": "Which of the following three documents are required for motorcycle riders in Ontario?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Birth certificate, marriage certificate, and valid driver's licence"
+      },
+      {
+        "index": "2",
+        "text": "Vehicle ownership document, passport, and insurance liability card"
+      },
+      {
+        "index": "3",
+        "text": "Valid driver's licence, birth certificate, and passport"
+      },
+      {
+        "index": "4",
+        "text": "Insurance liability card, valid driver's licence, and vehicle ownership document"
+      }
+    ],
+    "chosenAnswer": "Birth certificate, marriage certificate, and valid driver's licence",
+    "correctAnswer": "Insurance liability card, valid driver's licence, and vehicle ownership document",
+    "explanation": "Insurance liability card, valid driver's licence, and vehicle ownership documents are required for all drivers in Ontario."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 30,
+    "question": "The three principles used when braking hard in a turn are",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "turn, slow, squeeze."
+      },
+      {
+        "index": "2",
+        "text": "square, push, lean."
+      },
+      {
+        "index": "3",
+        "text": "control, straighten, move."
+      },
+      {
+        "index": "4",
+        "text": "straighten, square, squeeze."
+      }
+    ],
+    "chosenAnswer": "turn, slow, squeeze.",
+    "correctAnswer": "straighten, square, squeeze.",
+    "explanation": "When braking hard in a turn, the driver must follow the principles of \"straighten, square, squeeze\" and practice them."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 31,
+    "question": "When a motorcycle rider wants to turn while moving faster than 25 km/h, s/he must use the",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "push steering method."
+      },
+      {
+        "index": "2",
+        "text": "brakes blocking method."
+      },
+      {
+        "index": "3",
+        "text": "gear changing method."
+      },
+      {
+        "index": "4",
+        "text": "clutch pushing method."
+      }
+    ],
+    "chosenAnswer": "push steering method.",
+    "correctAnswer": "push steering method.",
+    "explanation": "When travelling at speeds greater than 25 km/h, the rider must push on the handgrip in the direction of the turn."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 32,
+    "question": "When a motorist reaches a through intersection where s/he may not need to stop, s/he must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "stop in front of four-wheeled vehicles."
+      },
+      {
+        "index": "2",
+        "text": "stop between two vehicles."
+      },
+      {
+        "index": "3",
+        "text": "pass with maximum speed to avoid collisions."
+      },
+      {
+        "index": "4",
+        "text": "yield to pedestrians and vehicles or come to a complete stop if necessary."
+      }
+    ],
+    "chosenAnswer": "stop in front of four-wheeled vehicles.",
+    "correctAnswer": "yield to pedestrians and vehicles or come to a complete stop if necessary.",
+    "explanation": "Whenever a motorist reaches a through intersection, s/he must yield to pedestrians and other vehicles as per the right-of-way rules."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 33,
+    "question": "To protect the face and eyes from flying material, the motorcyclist should wear",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "eyeglasses."
+      },
+      {
+        "index": "2",
+        "text": "a face shield."
+      },
+      {
+        "index": "3",
+        "text": "a mask."
+      },
+      {
+        "index": "4",
+        "text": "a cap."
+      }
+    ],
+    "chosenAnswer": "eyeglasses.",
+    "correctAnswer": "a face shield.",
+    "explanation": "Face protective shields protect the motorcyclist's face and eyes from flying objects."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 34,
+    "question": "High speed wobble for a motorcycle can be prevented",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "by further increasing the speed of the vehicle."
+      },
+      {
+        "index": "2",
+        "text": "by suddenly applying brakes and balancing the vehicle."
+      },
+      {
+        "index": "3",
+        "text": "by shifting the weight of the body to one side."
+      },
+      {
+        "index": "4",
+        "text": "by slowly closing the throttle without applying brakes."
+      }
+    ],
+    "chosenAnswer": "by further increasing the speed of the vehicle.",
+    "correctAnswer": "by slowly closing the throttle without applying brakes.",
+    "explanation": "High speed wobble can be prevented by slowly closing the throttle and reducing the speed without applying the brakes."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 35,
+    "question": "While making a turn, the passenger on a motorcycle must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "bend backward."
+      },
+      {
+        "index": "2",
+        "text": "lean in the direction of the turn."
+      },
+      {
+        "index": "3",
+        "text": "maintain straight posture."
+      },
+      {
+        "index": "4",
+        "text": "lean in the opposite direction of the turn."
+      }
+    ],
+    "chosenAnswer": "bend backward.",
+    "correctAnswer": "lean in the direction of the turn.",
+    "explanation": "The driver as well as the passenger must lean in the direction of the turn."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 36,
+    "question": "Which of the following actions can save a motorcycle rider's life when s/he wants to change lanes, position within a lane, or before turning off the roadway?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "A quick movement toward the other lane"
+      },
+      {
+        "index": "2",
+        "text": "A quick shoulder check"
+      },
+      {
+        "index": "3",
+        "text": "A sudden gear change"
+      },
+      {
+        "index": "4",
+        "text": "Slowing down quickly"
+      }
+    ],
+    "chosenAnswer": "A quick movement toward the other lane",
+    "correctAnswer": "A quick shoulder check",
+    "explanation": "The driver should do a quick shoulder check before changing the lane position, position within a lane, or before turning off the roadway."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 37,
+    "question": "Motorcycle riders must give the right-of-way to",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "heavy goods trucks."
+      },
+      {
+        "index": "2",
+        "text": "pedestrians."
+      },
+      {
+        "index": "3",
+        "text": "other motorcycles."
+      },
+      {
+        "index": "4",
+        "text": "four-wheelers."
+      }
+    ],
+    "chosenAnswer": "heavy goods trucks.",
+    "correctAnswer": "pedestrians.",
+    "explanation": "Motorcycle riders must stop for pedestrians at crosswalks or intersections."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 38,
+    "question": "To make a safe turn, the motorcyclist must",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "use a higher gear."
+      },
+      {
+        "index": "2",
+        "text": "lean the bike in the direction of the turn."
+      },
+      {
+        "index": "3",
+        "text": "take sharp turn."
+      },
+      {
+        "index": "4",
+        "text": "lean the bike against the direction of the turn."
+      }
+    ],
+    "chosenAnswer": "use a higher gear.",
+    "correctAnswer": "lean the bike in the direction of the turn.",
+    "explanation": "To turn a motorcycle safely, the rider must lean the bike in the direction of the turn."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 39,
+    "question": "Which of the following is most useful to the motorcycle rider to help him/her maintain balance?",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Regular body movements while riding"
+      },
+      {
+        "index": "2",
+        "text": "Keeping the feet steady on the footpegs"
+      },
+      {
+        "index": "3",
+        "text": "Correct use of lower gears"
+      },
+      {
+        "index": "4",
+        "text": "Wearing a helmet"
+      }
+    ],
+    "chosenAnswer": "Regular body movements while riding",
+    "correctAnswer": "Keeping the feet steady on the footpegs",
+    "explanation": "Motorcycle riders must keep their feet firmly on the footpegs. This will help them maintain balance."
+  },
+  {
+    "testName": "m1-practice-test-1",
+    "questionNumber": 40,
+    "question": "For safe driving on the road, a driver must do the following",
+    "questionImageUrl": null,
+    "answerOptions": [
+      {
+        "index": "1",
+        "text": "Apply brakes often to prevent any collisions."
+      },
+      {
+        "index": "2",
+        "text": "Check the surroundings and scan the road in all directions."
+      },
+      {
+        "index": "3",
+        "text": "Turn the headlights on to improve vision."
+      },
+      {
+        "index": "4",
+        "text": "Change lanes frequently to avoid any accidents with fast-moving vehicles."
+      }
+    ],
+    "chosenAnswer": "Apply brakes often to prevent any collisions.",
+    "correctAnswer": "Check the surroundings and scan the road in all directions.",
+    "explanation": "The driver must watch the surrounding areas and scan the road in all directions to prevent accidents."
+  }
+]
