@@ -36,6 +36,33 @@ export function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+const BANK_KEY = "m1-missed";
+
+function questionId(q: Question): string {
+  return `${q.testName}-${q.questionNumber}`;
+}
+
+export function getBankQuestions(): Question[] {
+  if (typeof window === "undefined") return [];
+  try {
+    return JSON.parse(localStorage.getItem(BANK_KEY) || "[]");
+  } catch {
+    return [];
+  }
+}
+
+export function updateBank(question: Question, correct: boolean): void {
+  if (typeof window === "undefined") return;
+  const bank = getBankQuestions();
+  const id = questionId(question);
+  const updated = correct
+    ? bank.filter((q) => questionId(q) !== id)
+    : bank.some((q) => questionId(q) === id)
+    ? bank
+    : [...bank, question];
+  localStorage.setItem(BANK_KEY, JSON.stringify(updated));
+}
+
 export async function getAllQuestions(): Promise<Question[]> {
   const res = await fetch("/data/all-questions.json");
   const raw = await res.json();

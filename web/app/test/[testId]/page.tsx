@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import Link from "next/link";
-import { getAllQuestions, shuffle, type Question } from "@/lib/questions";
+import { getAllQuestions, getBankQuestions, updateBank, shuffle, type Question } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 
@@ -14,30 +14,41 @@ const TEST_LABELS: Record<string, string> = {
   "m1-practice-test-4": "Fines & Limits",
   "m1-practice-test-5": "Road Sign Test",
   all: "Marathon",
+  bank: "Missed Questions",
 };
 
 export default function TestPage() {
   const { testId } = useParams<{ testId: string }>();
-  const router = useRouter();
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
-  const applyShuffleAndReset = (all: Question[]) => {
-    const filtered = testId === "all" ? all : all.filter((q) => q.testName === testId);
-    setQuestions(shuffle(filtered).map((q) => ({ ...q, answerOptions: shuffle(q.answerOptions) })));
+  const loadQuestions = async () => {
+    let base: Question[];
+    if (testId === "bank") {
+      base = getBankQuestions();
+    } else if (testId === "all") {
+      base = await getAllQuestions();
+    } else {
+      const all = await getAllQuestions();
+      base = all.filter((q) => q.testName === testId);
+    }
+    setQuestions(shuffle(base).map((q) => ({ ...q, answerOptions: shuffle(q.answerOptions) })));
     setIndex(0);
     setScore(0);
     setDone(false);
+    setLoaded(true);
   };
 
   useEffect(() => {
-    getAllQuestions().then(applyShuffleAndReset);
+    loadQuestions();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [testId]);
 
   const handleNext = (correct: boolean) => {
+    updateBank(questions[index], correct);
     if (correct) setScore((s) => s + 1);
     if (index + 1 >= questions.length) {
       setDone(true);
@@ -46,10 +57,21 @@ export default function TestPage() {
     }
   };
 
-  if (questions.length === 0) {
+  if (!loaded) {
     return (
       <main className="flex-1 flex items-center justify-center">
         <p className="text-sm text-gray-400">Loading…</p>
+      </main>
+    );
+  }
+
+  if (loaded && questions.length === 0) {
+    return (
+      <main className="flex-1 flex flex-col items-center justify-center px-4 gap-3">
+        <p className="text-sm text-gray-500">No missed questions yet.</p>
+        <Link href="/" className="px-4 py-2 text-sm bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors">
+          All tests
+        </Link>
       </main>
     );
   }
@@ -68,7 +90,7 @@ export default function TestPage() {
         <p className="text-xs text-gray-400 mb-4">Passing score: 80%</p>
         <div className="flex gap-3">
           <button
-            onClick={() => getAllQuestions().then(applyShuffleAndReset)}
+            onClick={loadQuestions}
             className="px-4 py-2 text-sm border border-gray-200 rounded-lg hover:border-gray-400 transition-colors"
           >
             Restart

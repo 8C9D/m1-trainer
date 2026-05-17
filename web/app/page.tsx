@@ -2,13 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { getTests, type Test } from "@/lib/questions";
+import { getTests, getBankQuestions, type Test } from "@/lib/questions";
 
 export default function Home() {
   const [tests, setTests] = useState<Test[]>([]);
+  const [bankCount, setBankCount] = useState(0);
 
   useEffect(() => {
     getTests().then(setTests);
+    setBankCount(getBankQuestions().length);
   }, []);
 
   const total = tests.reduce((sum, t) => sum + t.questions.length, 0);
@@ -37,6 +39,16 @@ export default function Home() {
             >
               <span className="font-medium text-sm">Marathon</span>
               <span className="text-sm opacity-60">{total} questions →</span>
+            </Link>
+          )}
+
+          {bankCount > 0 && (
+            <Link
+              href="/test/bank"
+              className="flex items-center justify-between px-4 py-4 border border-red-200 rounded-lg hover:border-red-400 transition-colors bg-white mt-2"
+            >
+              <span className="font-medium text-sm text-red-600">Missed Questions</span>
+              <span className="text-sm text-red-300">{bankCount} questions →</span>
             </Link>
           )}
         </div>
