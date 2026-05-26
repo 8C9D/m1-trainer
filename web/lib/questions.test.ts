@@ -198,6 +198,7 @@ describe("classifyTestId", () => {
     if (result.kind !== "practice") return;
     expect(result.testId).toBe("g1-practice-test-2");
     expect(result.licenceClass.key).toBe("g1");
+    expect(result.test.id).toBe("g1-practice-test-2");
     expect(result.test.label).toBe("Practice Test 2");
     expect(result.label).toBe("Practice Test 2");
   });
@@ -238,6 +239,28 @@ describe("classifyTestId", () => {
     expect(result.kind).toBe("unknown");
     expect(result.testId).toBe("not-a-real-test");
     expect(result.label).toBe("not-a-real-test");
+  });
+});
+
+describe("LICENCE_CLASSES practice-test ordering", () => {
+  it("preserves M1 practice test declaration order", () => {
+    const m1 = LICENCE_CLASSES.find((c) => c.key === "m1")!;
+    expect(m1.tests.map((t) => t.id)).toEqual([
+      "m1-practice-test-1",
+      "m1-practice-test-2",
+      "m1-practice-test-3",
+      "m1-practice-test-4",
+      "m1-practice-test-5",
+    ]);
+  });
+
+  it("preserves G1 practice test declaration order", () => {
+    const g1 = LICENCE_CLASSES.find((c) => c.key === "g1")!;
+    expect(g1.tests.map((t) => t.id)).toEqual([
+      "g1-practice-test-1",
+      "g1-practice-test-2",
+      "g1-practice-test-3",
+    ]);
   });
 });
 

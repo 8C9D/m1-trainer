@@ -15,8 +15,8 @@ export interface Question {
 }
 
 export interface PracticeTestMeta {
+  id: string;
   label: string;
-  order: number;
   dataFile: string;
 }
 
@@ -27,7 +27,7 @@ export interface LicenceClass {
   bankKey: string;
   marathonId: string;
   bankId: string;
-  tests: Record<string, PracticeTestMeta>;
+  tests: PracticeTestMeta[];
 }
 
 export const MARATHON_LABEL = "Marathon";
@@ -43,13 +43,13 @@ export const LICENCE_CLASSES: LicenceClass[] = [
     bankKey: "m1-missed",
     marathonId: "all",
     bankId: "bank",
-    tests: {
-      "m1-practice-test-1": { label: "Practice Test 1", order: 1, dataFile: `${DATA_ROUTE}/m1-practice-test-1/questions.json` },
-      "m1-practice-test-2": { label: "Practice Test 2", order: 2, dataFile: `${DATA_ROUTE}/m1-practice-test-2/questions.json` },
-      "m1-practice-test-3": { label: "Practice Test 3", order: 3, dataFile: `${DATA_ROUTE}/m1-practice-test-3/questions.json` },
-      "m1-practice-test-4": { label: "Fines & Limits", order: 4, dataFile: `${DATA_ROUTE}/m1-practice-test-4/questions.json` },
-      "m1-practice-test-5": { label: "Road Sign Test", order: 5, dataFile: `${DATA_ROUTE}/m1-practice-test-5/questions.json` },
-    },
+    tests: [
+      { id: "m1-practice-test-1", label: "Practice Test 1", dataFile: `${DATA_ROUTE}/m1-practice-test-1/questions.json` },
+      { id: "m1-practice-test-2", label: "Practice Test 2", dataFile: `${DATA_ROUTE}/m1-practice-test-2/questions.json` },
+      { id: "m1-practice-test-3", label: "Practice Test 3", dataFile: `${DATA_ROUTE}/m1-practice-test-3/questions.json` },
+      { id: "m1-practice-test-4", label: "Fines & Limits", dataFile: `${DATA_ROUTE}/m1-practice-test-4/questions.json` },
+      { id: "m1-practice-test-5", label: "Road Sign Test", dataFile: `${DATA_ROUTE}/m1-practice-test-5/questions.json` },
+    ],
   },
   {
     key: "g1",
@@ -58,13 +58,17 @@ export const LICENCE_CLASSES: LicenceClass[] = [
     bankKey: "g1-missed",
     marathonId: "g1-all",
     bankId: "g1-bank",
-    tests: {
-      "g1-practice-test-1": { label: "Practice Test 1", order: 1, dataFile: `${DATA_ROUTE}/g1-practice-test-1/questions.json` },
-      "g1-practice-test-2": { label: "Practice Test 2", order: 2, dataFile: `${DATA_ROUTE}/g1-practice-test-2/questions.json` },
-      "g1-practice-test-3": { label: "Practice Test 3", order: 3, dataFile: `${DATA_ROUTE}/g1-practice-test-3/questions.json` },
-    },
+    tests: [
+      { id: "g1-practice-test-1", label: "Practice Test 1", dataFile: `${DATA_ROUTE}/g1-practice-test-1/questions.json` },
+      { id: "g1-practice-test-2", label: "Practice Test 2", dataFile: `${DATA_ROUTE}/g1-practice-test-2/questions.json` },
+      { id: "g1-practice-test-3", label: "Practice Test 3", dataFile: `${DATA_ROUTE}/g1-practice-test-3/questions.json` },
+    ],
   },
 ];
+
+function getPracticeTest(licenceClass: LicenceClass, testId: string): PracticeTestMeta | undefined {
+  return licenceClass.tests.find((t) => t.id === testId);
+}
 
 export type ClassifiedTest =
   | { kind: "practice"; testId: string; licenceClass: LicenceClass; test: PracticeTestMeta; label: string }
@@ -74,7 +78,7 @@ export type ClassifiedTest =
 
 export function classifyTestId(testId: string): ClassifiedTest {
   for (const licenceClass of LICENCE_CLASSES) {
-    const test = licenceClass.tests[testId];
+    const test = getPracticeTest(licenceClass, testId);
     if (test) {
       return { kind: "practice", testId, licenceClass, test, label: test.label };
     }
@@ -255,7 +259,7 @@ export async function getQuestionsForPracticeTest(
   licenceClass: LicenceClass,
   testId: string,
 ): Promise<Question[]> {
-  const meta = licenceClass.tests[testId];
+  const meta = getPracticeTest(licenceClass, testId);
   if (!meta) return [];
   return fetchQuestions(meta.dataFile);
 }

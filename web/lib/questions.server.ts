@@ -6,7 +6,6 @@ import { parseQuestionsArray, type LicenceClass } from "./questions";
 export interface PracticeTestSummary {
   id: string;
   label: string;
-  order: number;
   count: number;
 }
 
@@ -22,14 +21,11 @@ function countValidQuestions(publicPath: string): number {
 }
 
 export function getClassSummary(licenceClass: LicenceClass): LicenceClassSummary {
-  const tests: PracticeTestSummary[] = Object.entries(licenceClass.tests)
-    .map(([id, meta]) => ({
-      id,
-      label: meta.label,
-      order: meta.order,
-      count: countValidQuestions(meta.dataFile),
-    }))
-    .sort((a, b) => a.order - b.order);
+  const tests: PracticeTestSummary[] = licenceClass.tests.map((test) => ({
+    id: test.id,
+    label: test.label,
+    count: countValidQuestions(test.dataFile),
+  }));
   const totalQuestions = tests.reduce((sum, t) => sum + t.count, 0);
   return { tests, totalQuestions };
 }
