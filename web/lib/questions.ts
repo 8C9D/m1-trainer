@@ -74,10 +74,6 @@ export function isBankTest(testId: string): boolean {
   return LICENCE_CLASSES.some((c) => c.bankId === testId);
 }
 
-export function isMarathonTest(testId: string): boolean {
-  return LICENCE_CLASSES.some((c) => c.marathonId === testId);
-}
-
 export function getTestLabel(testId: string): string {
   for (const c of LICENCE_CLASSES) {
     const meta = c.tests[testId];
