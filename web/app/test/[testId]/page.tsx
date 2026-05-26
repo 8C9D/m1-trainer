@@ -14,6 +14,15 @@ import {
 } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
+import { TestResults } from "@/components/TestResults";
+
+function CenteredMessage({ children }: { children: React.ReactNode }) {
+  return (
+    <main className="flex-1 flex flex-col items-center justify-center px-4 gap-3">
+      {children}
+    </main>
+  );
+}
 
 export default function TestPage() {
   const { testId } = useParams<{ testId: string }>();
@@ -98,58 +107,34 @@ function TestRun({ testId, onRestart }: { testId: string; onRestart: () => void 
 
   if (error) {
     return (
-      <main className="flex-1 flex flex-col items-center justify-center px-4 gap-3">
+      <CenteredMessage>
         <p className="text-sm text-red-500">{error}</p>
         <Link href="/" className="px-4 py-2 text-sm bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors">
           All tests
         </Link>
-      </main>
+      </CenteredMessage>
     );
   }
 
   if (loaded && questions.length === 0) {
     return (
-      <main className="flex-1 flex flex-col items-center justify-center px-4 gap-3">
+      <CenteredMessage>
         <p className="text-sm text-gray-500">No missed questions yet.</p>
         <Link href="/" className="px-4 py-2 text-sm bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors">
           All tests
         </Link>
-      </main>
+      </CenteredMessage>
     );
   }
 
   if (done) {
-    const pct = Math.round((score / questions.length) * 100);
-    const passed = pct >= 80;
-    const isBank = classified.kind === "bank";
     return (
-      <main className="flex-1 flex flex-col items-center justify-center px-4 gap-2">
-        {isBank ? (
-          <p className="text-4xl font-bold text-gray-900">Review Complete</p>
-        ) : (
-          <p className={`text-4xl font-bold ${passed ? "text-green-600" : "text-red-500"}`}>
-            {pct}% {passed ? "PASS" : "FAIL"}
-          </p>
-        )}
-        <p className="text-sm text-gray-500">
-          {score} / {questions.length} correct
-        </p>
-        {!isBank && <p className="text-xs text-gray-400 mb-4">Passing score: 80%</p>}
-        <div className={`flex gap-3 ${isBank ? "mt-4" : ""}`}>
-          <button
-            onClick={onRestart}
-            className="px-4 py-2 text-sm border border-gray-200 rounded-lg hover:border-gray-400 transition-colors"
-          >
-            Restart
-          </button>
-          <Link
-            href="/"
-            className="px-4 py-2 text-sm bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors"
-          >
-            All tests
-          </Link>
-        </div>
-      </main>
+      <TestResults
+        score={score}
+        total={questions.length}
+        isBank={classified.kind === "bank"}
+        onRestart={onRestart}
+      />
     );
   }
 
