@@ -6,7 +6,7 @@ import Link from "next/link";
 import {
   getBankQuestions,
   updateBank,
-  shuffle,
+  prepareTestQuestions,
   getTestLabel,
   getLicenceClassForTestId,
   isBankTest,
@@ -59,9 +59,7 @@ function TestRun({ testId, onRestart }: { testId: string; onRestart: () => void 
           }
         }
         if (cancelled) return;
-        setQuestions(
-          shuffle(base).map((q) => ({ ...q, answerOptions: shuffle(q.answerOptions) })),
-        );
+        setQuestions(prepareTestQuestions(base));
       } catch (e) {
         if (cancelled) return;
         console.error("Failed to load questions:", e);

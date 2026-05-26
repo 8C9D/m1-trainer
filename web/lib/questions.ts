@@ -93,6 +93,10 @@ export function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+export function prepareTestQuestions(base: Question[]): Question[] {
+  return shuffle(base).map((q) => ({ ...q, answerOptions: shuffle(q.answerOptions) }));
+}
+
 function questionId(q: Question): string {
   return `${q.testName}-${q.questionNumber}`;
 }

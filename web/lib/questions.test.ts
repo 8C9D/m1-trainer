@@ -3,6 +3,7 @@ import {
   deriveCorrectAnswerIndex,
   parseQuestion,
   parseQuestionsArray,
+  prepareTestQuestions,
   getBankQuestions,
   updateBank,
   getQuestionsForClass,
@@ -142,6 +143,48 @@ describe("parseQuestionsArray", () => {
     expect(() => parseQuestionsArray([validRaw, validRaw, bad], "/data/foo.json")).toThrow(
       /^\/data\/foo\.json\[2\]: .*testName/,
     );
+  });
+});
+
+describe("prepareTestQuestions", () => {
+  const makeQuestion = (n: number): Question => ({
+    testName: "g1-practice-test-1",
+    questionNumber: n,
+    question: `Q${n}`,
+    questionImageUrl: null,
+    answerOptions: [
+      { index: "1", text: "A" },
+      { index: "2", text: "B" },
+      { index: "3", text: "C" },
+      { index: "4", text: "D" },
+    ],
+    correctAnswer: "B",
+    correctAnswerIndex: "2",
+    explanation: "",
+  });
+
+  it("preserves the set of questions", () => {
+    const input = [1, 2, 3, 4, 5].map(makeQuestion);
+    const out = prepareTestQuestions(input);
+    expect(out).toHaveLength(input.length);
+    expect(out.map((q) => q.questionNumber).sort((a, b) => a - b)).toEqual([1, 2, 3, 4, 5]);
+  });
+
+  it("preserves each question's set of answer options", () => {
+    const out = prepareTestQuestions([makeQuestion(1)]);
+    expect(out[0].answerOptions.map((o) => o.index).sort()).toEqual(["1", "2", "3", "4"]);
+    expect(out[0].answerOptions.map((o) => o.text).sort()).toEqual(["A", "B", "C", "D"]);
+  });
+
+  it("does not mutate the input array or its questions' answer options", () => {
+    const input = [makeQuestion(1), makeQuestion(2)];
+    const snapshot = JSON.parse(JSON.stringify(input));
+    prepareTestQuestions(input);
+    expect(input).toEqual(snapshot);
+  });
+
+  it("returns [] for an empty input", () => {
+    expect(prepareTestQuestions([])).toEqual([]);
   });
 });
 
