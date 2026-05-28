@@ -88,7 +88,7 @@ and `scripts/sync-helpers.js`.
 - **Expected benefit:** Accurate, non-duplicative guidance.
 - **Suggested validation:** Manual read; links resolve.
 - **Dependency ordering:** Independent.
-- **Autopilot status:** Planned
+- **Autopilot status:** Implemented
 
 ### Opportunity C — Fix root `README.md` repo-layout accuracy
 
@@ -179,6 +179,8 @@ npm run cache-images  # node scripts/cache-images.js
 |---|---------|---------------|------------|--------|------|-------|
 | 0 | Add refactor opportunities report | `docs/refactor-opportunities.md` | n/a (docs) | `459eef1` | pushed | Plan committed first |
 | A | Remove unused boilerplate SVGs | deleted 5× `web/public/*.svg` | test (84), lint, build all green | `61a4b39` | pushed | Confirmed unreferenced; static assets only |
-| C | Fix root README repo-layout | `README.md` | every listed path verified to exist | _this commit_ | pending | Adds scrape.js/sync-helpers.js; scrapers noted as wrappers |
+| C | Fix root README repo-layout | `README.md` | every listed path verified to exist | `f193846` | pushed | Adds scrape.js/sync-helpers.js; scrapers noted as wrappers |
+| B | Replace boilerplate web/README | `web/README.md` | docs only; scripts cross-checked vs package.json | _this commit_ | pending | Removed inaccurate create-next-app boilerplate (e.g. false next/font claim) |
 
-_Entries are appended as each cleanup lands._
+_All planned cleanups implemented. The data/-traversal unification in §6 was
+deliberately skipped as behavior-changing and lacking test coverage._
