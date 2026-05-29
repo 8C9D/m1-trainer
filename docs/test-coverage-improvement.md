@@ -140,7 +140,23 @@ brittle route rendering.
   questions; a different `bankKey`/`bankId` pair is honored.
 - **Validation run:** `npm test -- components/BankCount.test.tsx`, then `npm test`.
 - **Result:** 4/4 new tests pass; full suite 93/93 pass.
-- **Commit:** `test: improve coverage for BankCount component` (see git log).
+- **Commit:** `bb40b42` — `test: improve coverage for BankCount component`.
+- **Push result:** pushed to `origin/chore/repo-cleanup-autopilot`.
+
+### Improvement 3 — `QuestionCard` keyboard / lock / explanation (Gap C)
+- **Files changed:** `web/components/QuestionCard.test.tsx` (extended).
+- **Behavior covered:** the keyboard handler (digit keys select by position;
+  Enter and Space advance with the computed correctness), the ignore path for an
+  out-of-range digit and for Enter before answering, the answer-lock that ignores
+  clicks after the first selection, and the explanation reveal.
+- **New test cases:** explanation hidden before / shown after answering; selection
+  locked after first click; digit "2" selects the correct option and Enter
+  advances `true`; digit "1" advances `false`; Space advances after a click;
+  out-of-range digit "9" selects nothing and Enter does not advance.
+- **Validation run:** `npm test -- components/QuestionCard.test.tsx`, then
+  `npm test`, then `npm run lint`.
+- **Result:** 11/11 file tests pass (6 new); full suite 99/99 pass; lint clean.
+- **Commit:** `test: improve coverage for QuestionCard interactions` (see git log).
 - **Push result:** pushed to `origin/chore/repo-cleanup-autopilot`.
 
 ## 6. Skipped Opportunities
@@ -162,3 +178,7 @@ brittle route rendering.
 
 Production code is unchanged. All additions are behavior-focused component tests
 that follow the existing Vitest + Testing Library conventions.
+
+Suite grew from **84 → 99 tests** (5 → 7 files). Remaining high-value gaps are
+Gap D (`lib/questions.server.ts`, needs a `server-only` shim) and Gap E (app
+route components), both deferred here as not low-risk.

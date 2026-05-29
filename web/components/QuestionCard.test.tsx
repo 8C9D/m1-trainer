@@ -78,4 +78,68 @@ describe("QuestionCard", () => {
     fireEvent.click(screen.getByRole("button", { name: /banana/i }));
     expect(screen.getByRole("button", { name: /finish/i })).toBeTruthy();
   });
+
+  it("reveals the explanation only after an option is selected", () => {
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={vi.fn()} />,
+    );
+    expect(screen.queryByText("Banana is the fruit.")).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: /banana/i }));
+    expect(screen.getByText("Banana is the fruit.")).toBeTruthy();
+  });
+
+  it("locks the selection once an answer is chosen, ignoring later clicks", () => {
+    const onNext = vi.fn();
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={onNext} />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: /apple/i })); // incorrect, locks in
+    fireEvent.click(screen.getByRole("button", { name: /banana/i })); // should be ignored
+    fireEvent.click(screen.getByRole("button", { name: /next/i }));
+    expect(onNext).toHaveBeenCalledTimes(1);
+    expect(onNext).toHaveBeenCalledWith(false);
+  });
+});
+
+describe("QuestionCard keyboard navigation", () => {
+  it("selects the option at the pressed digit's position", () => {
+    const onNext = vi.fn();
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={onNext} />,
+    );
+    fireEvent.keyDown(window, { key: "2" }); // Banana, the correct option
+    fireEvent.keyDown(window, { key: "Enter" });
+    expect(onNext).toHaveBeenCalledWith(true);
+  });
+
+  it("maps the digit to position, so a wrong digit advances with false", () => {
+    const onNext = vi.fn();
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={onNext} />,
+    );
+    fireEvent.keyDown(window, { key: "1" }); // Apple, incorrect
+    fireEvent.keyDown(window, { key: "Enter" });
+    expect(onNext).toHaveBeenCalledWith(false);
+  });
+
+  it("advances on the space key after an answer is selected", () => {
+    const onNext = vi.fn();
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={onNext} />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: /banana/i }));
+    fireEvent.keyDown(window, { key: " " });
+    expect(onNext).toHaveBeenCalledWith(true);
+  });
+
+  it("ignores a digit with no matching option and does not advance before answering", () => {
+    const onNext = vi.fn();
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={onNext} />,
+    );
+    fireEvent.keyDown(window, { key: "9" }); // out of range, no selection
+    expect(screen.queryByText("Banana is the fruit.")).toBeNull();
+    fireEvent.keyDown(window, { key: "Enter" }); // nothing selected yet
+    expect(onNext).not.toHaveBeenCalled();
+  });
 });
