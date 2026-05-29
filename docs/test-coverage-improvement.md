@@ -100,7 +100,7 @@ user-visible behavior:
   option's button text contains ✗, and a third option's button contains neither.
 - **Risk level:** Low (synchronous render + click; markers are user-visible text).
 - **Validation:** `npm test -- components/QuestionCard.test.tsx`
-- **Status:** Planned
+- **Status:** Implemented (see §6, Improvement 2)
 
 ### Remaining (not planned this cycle)
 - **`app/layout.tsx`:** renders `<html><body>{children}</body></html>` with
@@ -169,8 +169,23 @@ Two improvements, each its own commit, validated after each:
   (`test: improve coverage for the missed-question bank count`).
 
 ### Improvement 2 — `QuestionCard` answer-feedback markers (Gap J)
-- **Status:** Planned
-- _(to be filled in after implementation)_
+- **Files changed:** `web/components/QuestionCard.test.tsx` (three new cases in
+  the existing `QuestionCard` suite; no import changes).
+- **Behavior covered:** `getIndicator`'s ✓/✗ feedback — hidden before
+  answering; after a wrong pick the correct option shows ✓ and the chosen option
+  shows ✗ (an untouched option shows neither); a correct pick shows ✓ on the
+  correct option and no ✗ anywhere.
+- **New test cases:** no ✓/✗ before answering; click a wrong option → correct
+  option's button contains ✓, clicked option's button contains ✗, third option
+  contains neither; click the correct option → its button contains ✓ and no ✗
+  is present.
+- **Validation run:** `npx vitest run components/QuestionCard.test.tsx`, then
+  full `npx vitest run`, `npm run lint`, `npx tsc --noEmit`.
+- **Result:** QuestionCard **10 → 13** tests; full suite **120 → 123**, all
+  passing; lint clean; no new `tsc` errors (the 2 remaining are the pre-existing
+  CommonJS-import nits in `lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`).
+- **Status:** Implemented. Commit + push: see git log
+  (`test: improve coverage for answer-feedback markers`).
 
 ## 7. Skipped Opportunities
 
@@ -187,8 +202,9 @@ Two improvements, each its own commit, validated after each:
 This cycle targets two uncovered **component behaviors** inside already-tested
 files: `BankCount`'s external-store reactivity (its reason for using
 `useSyncExternalStore` at all) and `QuestionCard`'s ✓/✗ answer feedback.
-Production code is unchanged; all changes are additive test cases that follow
-the existing style.
+The suite grew **118 → 123 tests** (still 10 files; both additions extend
+existing test files). Production code is unchanged; all changes are additive
+test cases that follow the existing style.
 
 The standing non-test artifact remains the `server-only` resolve alias + stub
 from an earlier cycle (test infrastructure mirroring Next's own `react-server`

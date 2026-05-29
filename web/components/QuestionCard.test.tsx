@@ -99,6 +99,37 @@ describe("QuestionCard", () => {
     expect(onNext).toHaveBeenCalledTimes(1);
     expect(onNext).toHaveBeenCalledWith(false);
   });
+
+  it("shows no ✓/✗ feedback markers before an answer is chosen", () => {
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={vi.fn()} />,
+    );
+    expect(screen.queryByText("✓")).toBeNull();
+    expect(screen.queryByText("✗")).toBeNull();
+  });
+
+  it("marks the correct option with ✓ and the chosen wrong option with ✗ after answering", () => {
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={vi.fn()} />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: /apple/i })); // wrong; correct is Banana
+
+    expect(screen.getByRole("button", { name: /banana/i }).textContent).toContain("✓");
+    expect(screen.getByRole("button", { name: /apple/i }).textContent).toContain("✗");
+    const untouched = screen.getByRole("button", { name: /cherry/i }).textContent ?? "";
+    expect(untouched).not.toContain("✓");
+    expect(untouched).not.toContain("✗");
+  });
+
+  it("marks only the correct option with ✓ (and shows no ✗) when answered correctly", () => {
+    render(
+      <QuestionCard question={makeQuestion()} questionNumber={1} total={4} onNext={vi.fn()} />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: /banana/i })); // correct
+
+    expect(screen.getByRole("button", { name: /banana/i }).textContent).toContain("✓");
+    expect(screen.queryByText("✗")).toBeNull();
+  });
 });
 
 describe("QuestionCard keyboard navigation", () => {
