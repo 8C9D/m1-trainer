@@ -182,7 +182,7 @@ Two improvements, each its own commit, validated after each:
 - **Validation run:** `npx vitest run components/QuestionCard.test.tsx`, then
   full `npx vitest run`, `npm run lint`, `npx tsc --noEmit`.
 - **Result:** QuestionCard **10 → 13** tests; full suite **120 → 123**, all
-  passing; lint clean; no new `tsc` errors (the 2 remaining are the pre-existing
+  passing; lint clean; no new `tsc` errors (the 7 remaining are the pre-existing
   CommonJS-import nits in `lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`).
 - **Status:** Implemented. Commit + push: see git log
   (`test: improve coverage for answer-feedback markers`).
