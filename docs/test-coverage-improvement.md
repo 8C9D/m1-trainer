@@ -61,7 +61,7 @@ needing test infrastructure (a `server-only` resolver) or as async/stateful.
   empty class. Plus a real-data invariant smoke check (total == sum of parts).
 - **Risk level:** Low (after the alias).
 - **Validation:** `npm test -- lib/questions.server.test.ts`
-- **Status:** Planned
+- **Status:** Implemented (see §5, Improvement 1)
 
 ### Gap E1 — `app/test/[testId]/page.tsx` (`TestRun`) state machine untested
 - **Location:** `web/app/test/[testId]/page.tsx`
@@ -123,7 +123,28 @@ Three improvements, each its own commit, validated after each:
 
 ## 5. Implemented Test Improvements
 
-_Filled in as each improvement lands._
+### Improvement 1 — `getClassSummary` (Gap D)
+- **Files changed:** `web/vitest.config.ts` (added the `server-only` alias),
+  `web/test/server-only-stub.ts` (new empty stub), `web/lib/questions.server.test.ts` (new).
+- **Behavior covered:** the home-page question-count summary — per-test
+  id/label/count mapping, summing into `totalQuestions`, empty-file handling,
+  the no-tests case (reads nothing), and parse-error surfacing that names the
+  offending data file.
+- **New test cases:** sums per-test counts (2 + 3 → 5) with correct
+  id/label/count; an empty data file counts as 0 and the rest still sum; a
+  class with no tests yields `{ tests: [], totalQuestions: 0 }` and never reads
+  the filesystem; a non-array data file throws an error naming its dataFile;
+  plus a real-`public/data` invariant smoke test per licence class
+  (`totalQuestions` equals the sum of positive integer per-test counts, and
+  ids/labels match `LICENCE_CLASSES`).
+- **Validation run:** `npm test -- lib/questions.server.test.ts`, then
+  `npx tsc --noEmit`, `npm test`, `npm run lint`.
+- **Result:** 6/6 new tests pass; full suite **99 → 105** pass (8 files); lint
+  clean; the new file is type-clean (the only `tsc` errors are pre-existing,
+  in `lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`, from the untyped
+  CommonJS helper imports — unrelated to this change).
+- **Commit:** see git log (`test: improve coverage for questions.server summary`).
+- **Push result:** pushed to `origin/main`.
 
 ## 6. Skipped Opportunities
 
