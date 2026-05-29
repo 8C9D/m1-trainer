@@ -82,7 +82,7 @@ needing test infrastructure (a `server-only` resolver) or as async/stateful.
   exercised end to end; only the route-param and network boundaries are doubled.
 - **Risk level:** Medium (async effects + Testing Library `waitFor`).
 - **Validation:** `npm test -- "app/test/[testId]/page.test.tsx"`
-- **Status:** Planned
+- **Status:** Implemented (see §5, Improvement 2)
 
 ### Gap E2 — `app/page.tsx` (`Home`) untested
 - **Location:** `web/app/page.tsx`
@@ -144,6 +144,29 @@ Three improvements, each its own commit, validated after each:
   in `lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`, from the untyped
   CommonJS helper imports — unrelated to this change).
 - **Commit:** see git log (`test: improve coverage for questions.server summary`).
+- **Push result:** pushed to `origin/main`.
+
+### Improvement 2 — `TestRun` state machine (Gap E1)
+- **Files changed:** `web/app/test/[testId]/page.test.tsx` (new).
+- **Behavior covered:** the quiz route's render states and the core answer loop —
+  classify route id → load (bank via `localStorage`, fetch otherwise) → render
+  the right screen → score → write the bank.
+- **New test cases:** an empty bank renders "No missed questions yet." with the
+  "All tests" link; a failed fetch (`ok: false`) renders the error message and
+  link (with `console.error` silenced); a fetched marathon test renders the
+  first question plus the `1 / 2` progress counter and fetches the full-corpus
+  file; answering the single bank question correctly reaches `TestResults`
+  ("Review Complete", `1 / 1 correct`) and removes it from the missed-question
+  bank in `localStorage`.
+- **Approach:** `next/navigation`'s `useParams` is mocked to set the route id;
+  bank mode is driven by seeded `localStorage` (deterministic, no shuffling
+  ambiguity), the fetch paths by a stubbed `fetch`. Async renders are awaited
+  with Testing Library `findBy*`.
+- **Validation run:** `npm test -- "app/test/[testId]/page.test.tsx"`, then
+  `npx tsc --noEmit`, `npm test`, `npm run lint`.
+- **Result:** 4/4 new tests pass; full suite **105 → 109** pass (9 files); lint
+  clean; new file type-clean.
+- **Commit:** see git log (`test: improve coverage for the quiz route state machine`).
 - **Push result:** pushed to `origin/main`.
 
 ## 6. Skipped Opportunities
