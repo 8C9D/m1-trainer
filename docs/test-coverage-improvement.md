@@ -1,8 +1,9 @@
 # Test Coverage Improvement Report
 
-_Updated: 2026-05-29. Scope: the `web/` Next.js app, the only part of the repo
-with a configured test runner. Supersedes the 2026-05-28 cycle (ProgressBar /
-BankCount / QuestionCard), which is now merged to `main`._
+_Updated: 2026-05-29 (cycle 3). Scope: the `web/` Next.js app, the only part of
+the repo with a configured test runner. Supersedes the earlier 2026-05-29 cycle
+(Gaps D / E1 / E2 — `getClassSummary`, the `TestRun` state machine, and the
+home page), which is now merged to `main`._
 
 ## 1. Repository Test Overview
 
@@ -17,89 +18,111 @@ BankCount / QuestionCard), which is now merged to `main`._
   `web/lib/*.test.ts` via relative import. The stateful scripts
   (`scrape.js`, `sync-data.js`, `cache-images.js`) have no tests.
 
-Baseline before this cycle: **7 test files, 99 tests, all passing.**
+Baseline before this cycle: **10 test files, 112 tests, all passing.**
 
 ## 2. Current Coverage Quality Summary
 
-Coverage of the pure/business logic is strong and assertion quality is high
-(behavior-focused, not implementation-coupled):
+Coverage is broad and assertion quality is high (behavior-focused, not
+implementation-coupled). After the previous two cycles, every module has at
+least some coverage:
 
-- `lib/questions.ts` — thoroughly covered: `parseQuestion`,
-  `parseQuestionsArray`, `deriveCorrectAnswerIndex`, `prepareTestQuestions`,
-  `classifyTestId`, the missed-question bank (`getBankQuestions` / `updateBank`
-  add/remove/dedupe/migrate), and `getQuestionsFor*` data-file resolution.
-- `scripts/image-cache.js` and `scripts/sync-helpers.js` — well covered,
+- `lib/questions.ts` — `parseQuestion`, `parseQuestionsArray`,
+  `deriveCorrectAnswerIndex`, `prepareTestQuestions`, `classifyTestId`, the
+  missed-question bank (`getBankQuestions` / `parseBankStorage` /
+  `updateBank` — add/dedupe/migrate/version), and `getQuestionsFor*` data-file
+  resolution (happy path).
+- `lib/questions.server.ts` — `getClassSummary` (per-test counts, summing,
+  empty/parse-error handling, real-data invariant).
+- `scripts/image-cache.js` / `scripts/sync-helpers.js` — well covered,
   including null/empty/unparseable input and the cache-rewrite opt-in.
-- `components/` — `ProgressBar`, `BankCount`, `QuestionCard` (mouse + keyboard +
-  answer-lock + explanation), and `TestResults` are all covered.
+- `components/` — `ProgressBar`, `BankCount`, `QuestionCard`, `TestResults`.
+- `app/` — `Home` (links/labels/counts) and the `TestRun` state machine
+  (empty bank, load error, a fetched question, and a single bank question
+  scored to completion).
 
-The gaps are concentrated in code that is not a plain client component or pure
-helper: the **`server-only` summary module** that feeds the home page, and the
-**App Router route components** (`app/page.tsx` and the `TestRun` state machine
-in `app/test/[testId]/page.tsx`), which were deferred in the previous cycle as
-needing test infrastructure (a `server-only` resolver) or as async/stateful.
+The remaining gaps are not whole untested modules but **specific
+uncovered branches** inside otherwise-tested code, each of which maps to a
+real, user-visible behavior:
+
+1. `updateBank` is only exercised on a single-question bank, so its
+   **selective removal** (remove one missed question, keep the rest) is unproven.
+2. `getQuestionsFor*` is only tested on the happy path; its **fetch-failure and
+   malformed-body error branches** are covered only indirectly through the
+   route's generic `catch`.
+3. The `TestRun` route is only tested on a one-question run, so the
+   **question-advancement branch and multi-question score accumulation** are
+   unproven.
 
 ## 3. Highest-Value Coverage Gaps
 
-### Gap D — `lib/questions.server.ts` (`getClassSummary`) untested
-- **Location:** `web/lib/questions.server.ts`
-- **Why it matters:** `getClassSummary` reads each practice test's JSON from
-  `public/`, counts the valid questions, and reports per-test and total counts —
-  the numbers shown on every row of the home page. A regression here (bad
-  summing, a file that fails to parse) is user-visible and silent.
-- **Existing tests:** none.
-- **Why it was deferred:** the module starts with `import "server-only"`, which
-  is a Next.js build-time alias, not an installed package, so it is
-  **unresolvable under Vitest** (`vi.mock` cannot intercept it either — Vite's
-  import-analysis fails to resolve the specifier before the mock applies).
-- **Resolution this cycle:** add a one-line `resolve.alias` in
-  `vitest.config.ts` mapping `server-only` to an empty stub
-  (`web/test/server-only-stub.ts`) — exactly what Next's `react-server` export
-  condition does. Test infrastructure only; does not affect `next dev`/`build`.
-- **Missing cases:** summing counts across a class; per-test id/label/count
-  mapping; surfacing a parse error that names the offending data file; an
-  empty class. Plus a real-data invariant smoke check (total == sum of parts).
-- **Risk level:** Low (after the alias).
-- **Validation:** `npm test -- lib/questions.server.test.ts`
+### Gap F — `updateBank` selective removal is untested
+- **Location:** `web/lib/questions.ts` (`updateBank`)
+- **Why it matters:** the missed-question bank is a core feature. When you
+  answer a previously-missed question correctly, `updateBank` must remove **only
+  that** question (`bank.filter((q) => questionId(q) !== id)`) and leave the rest
+  of your review bank intact. A regression that cleared too much (or the wrong
+  entry) would silently erase a user's study list.
+- **Existing tests:** `updateBank` is covered for add-on-incorrect, dedupe,
+  legacy migration, and remove-on-correct — but the remove case only ever has a
+  **single** question in the bank (add one, remove that same one → empty), so
+  selective removal among several entries is unproven. There is also no test
+  that answering correctly a question **not** in the bank is a no-op.
+- **Missing cases:** with two distinct missed questions, answering one correctly
+  removes exactly that one and keeps the other (by `testName`/`questionNumber`
+  identity, not array position); answering correctly a question absent from the
+  bank leaves the bank unchanged.
+- **Suggested tests:** seed the bank with Q1 and Q2 as incorrect; `updateBank(Q1,
+  true)` → bank is `[Q2]`; `updateBank(Q3, true)` (never added) → bank unchanged.
+- **Risk level:** Low (pure, deterministic, no async).
+- **Validation:** `npm test -- lib/questions.test.ts`
 - **Status:** Implemented (see §5, Improvement 1)
 
-### Gap E1 — `app/test/[testId]/page.tsx` (`TestRun`) state machine untested
-- **Location:** `web/app/test/[testId]/page.tsx`
-- **Why it matters:** This is the core quiz loop. `TestRun` is a small state
-  machine: classify the route id → load questions (bank from `localStorage`,
-  marathon/practice via `fetch`) → render loading / error / "no missed
-  questions" / question / results, track the score, and write the missed-question
-  bank on each answer. None of these branches is currently tested.
-- **Existing tests:** none for the route; the underlying lib functions are
-  tested in isolation.
-- **Missing cases:** empty bank → "No missed questions yet."; load failure →
-  error message + "All tests" link; a loaded question renders with the progress
-  counter; answering the last question correctly reaches `TestResults`, scores
-  `1 / 1`, and removes the question from the bank.
-- **Approach:** mock `next/navigation`'s `useParams` to control the route id;
-  drive bank mode via seeded `localStorage` (no fetch, no shuffling ambiguity)
-  and the fetch paths via a stubbed `fetch`. Real component behavior is
-  exercised end to end; only the route-param and network boundaries are doubled.
-- **Risk level:** Medium (async effects + Testing Library `waitFor`).
-- **Validation:** `npm test -- "app/test/[testId]/page.test.tsx"`
+### Gap G — `getQuestionsFor*` error paths untested at the lib boundary
+- **Location:** `web/lib/questions.ts` (`fetchQuestions`, via
+  `getQuestionsForClass` / `getQuestionsForPracticeTest`)
+- **Why it matters:** these are the only network boundary in the app. On a failed
+  response, `fetchQuestions` throws a descriptive
+  `Failed to fetch <file>: <status> <statusText>`; on a 200 whose body is not an
+  array, it propagates `parseQuestionsArray`'s error naming the offending
+  `dataFile`. Both messages are what surface in logs / `console.error` when a
+  data file is missing or corrupt, yet they are exercised only indirectly through
+  the route's catch (which collapses everything to one generic UI message).
+- **Existing tests:** `data-file resolution` covers only `ok: true` happy paths
+  (which file gets fetched). No test drives `res.ok === false` or a non-array
+  body at the lib level.
+- **Missing cases:** a non-ok response throws an error naming the file and the
+  status/statusText; a 200 response whose JSON is not an array throws an error
+  naming the `dataFile`.
+- **Suggested tests:** stub `fetch` with `{ ok: false, status, statusText }` and
+  assert `getQuestionsForClass` rejects with the file + status; stub a 200 with a
+  non-array body and assert `getQuestionsForPracticeTest` rejects naming the file.
+- **Risk level:** Low (`fetch` stubbed, deterministic, pattern already in the file).
+- **Validation:** `npm test -- lib/questions.test.ts`
 - **Status:** Implemented (see §5, Improvement 2)
 
-### Gap E2 — `app/page.tsx` (`Home`) untested
-- **Location:** `web/app/page.tsx`
-- **Why it matters:** The home page maps each licence class's summary to a list
-  of test links (with question counts), a Marathon link, and the bank link.
-  The href wiring and the count display are user-visible and easy to break.
-- **Existing tests:** none.
-- **Missing cases:** both licence-class sections render; one link per practice
-  test with the right `href` (`/test/{id}`) and label; the Marathon link
-  (`/test/{marathonId}`) shows the class total; the displayed total equals the
-  sum of the per-test counts.
-- **Approach:** `Home` is a synchronous server component; with the `server-only`
-  alias it renders under jsdom and reads the real `public/data` files. Assert
-  structure/hrefs/labels and the total==sum invariant rather than brittle exact
-  counts.
-- **Risk level:** Low/Medium.
-- **Validation:** `npm test -- app/page.test.tsx`
+### Gap H — quiz-route question advancement & multi-question scoring untested
+- **Location:** `web/app/test/[testId]/page.tsx` (`TestRun.handleNext`)
+- **Why it matters:** this is the core quiz loop. `handleNext` either advances
+  (`setIndex((i) => i + 1)`) or finishes (`index + 1 >= questions.length →
+  setDone(true)`), accumulating score along the way. The previous cycle tested
+  only a **one-question** bank run, which finishes immediately — so the
+  advancement branch, the progress counter moving (`1 / 2` → `2 / 2`), score
+  accumulation across questions, and the non-bank PASS/FAIL results screen
+  reached through the route are all unproven.
+- **Existing tests:** `TestPage / TestRun state machine` covers the empty-bank
+  message, a load error, a single fetched question rendering, and one bank
+  question scored to `1 / 1`.
+- **Missing cases:** a two-question (marathon) run where answering the first
+  advances to the second (progress `1 / 2` → `2 / 2`); answering both correctly
+  reaches `TestResults` with `2 / 2 correct` and the `100% PASS` (non-bank)
+  screen; answering one of the two incorrectly yields a partial score.
+- **Suggested tests:** stub `fetch` to return two questions with distinct,
+  uniquely-identifiable correct options (so the right button can be clicked on
+  each screen regardless of shuffle order); drive the run via the existing
+  `useParams` mock and `findBy*` for the async load.
+- **Risk level:** Low/Medium (async effects + Testing Library `findBy*`; follows
+  the pattern established for Gap E1).
+- **Validation:** `npm test -- "app/test/[testId]/page.test.tsx"`
 - **Status:** Implemented (see §5, Improvement 3)
 
 ### Remaining (not planned this cycle)
@@ -108,85 +131,76 @@ needing test infrastructure (a `server-only` resolver) or as async/stateful.
 - **Stateful pipeline scripts (`scrape.js`, `sync-data.js`, `cache-images.js`):**
   side-effecting (network, filesystem, Playwright); their pure cores are already
   extracted into `scripts/sync-helpers.js` / `scripts/image-cache.js` and tested.
-- **`QuestionCard` image branch:** uses `next/image`, which the suite
+- **`QuestionCard` `next/image` branch:** uses `next/image`, which the suite
   deliberately avoids.
+- **`QuestionCard` form-field keyboard guard** (`e.target instanceof
+  HTMLInputElement …`): defensive — there are no inputs in the card today, so a
+  test would assert behavior the UI cannot currently produce.
+- **`TestResults` `total === 0` (NaN%):** unreachable — the route renders the
+  "no questions" screen before any zero-length run can reach results.
+- **SSR guards in `getBankQuestions` / `updateBank`** (`typeof window ===
+  "undefined"`): not reachable under the jsdom test environment.
 
 ## 4. Test Improvement Plan
 
 Three improvements, each its own commit, validated after each:
 
-1. **Gap D** — add the `server-only` alias + stub, and add
-   `web/lib/questions.server.test.ts`.
-2. **Gap E1** — add `web/app/test/[testId]/page.test.tsx` for the `TestRun`
-   state machine.
-3. **Gap E2** — add `web/app/page.test.tsx` for the home page.
+1. **Gap F** — extend `web/lib/questions.test.ts` (`updateBank`) with
+   selective-removal and correct-not-in-bank cases.
+2. **Gap G** — extend `web/lib/questions.test.ts` with `getQuestionsFor*`
+   fetch-failure and malformed-body error cases.
+3. **Gap H** — extend `web/app/test/[testId]/page.test.tsx` with a
+   two-question advancement / scoring run.
 
 ## 5. Implemented Test Improvements
 
-### Improvement 1 — `getClassSummary` (Gap D)
-- **Files changed:** `web/vitest.config.ts` (added the `server-only` alias),
-  `web/test/server-only-stub.ts` (new empty stub), `web/lib/questions.server.test.ts` (new).
-- **Behavior covered:** the home-page question-count summary — per-test
-  id/label/count mapping, summing into `totalQuestions`, empty-file handling,
-  the no-tests case (reads nothing), and parse-error surfacing that names the
-  offending data file.
-- **New test cases:** sums per-test counts (2 + 3 → 5) with correct
-  id/label/count; an empty data file counts as 0 and the rest still sum; a
-  class with no tests yields `{ tests: [], totalQuestions: 0 }` and never reads
-  the filesystem; a non-array data file throws an error naming its dataFile;
-  plus a real-`public/data` invariant smoke test per licence class
-  (`totalQuestions` equals the sum of positive integer per-test counts, and
-  ids/labels match `LICENCE_CLASSES`).
-- **Validation run:** `npm test -- lib/questions.server.test.ts`, then
-  `npx tsc --noEmit`, `npm test`, `npm run lint`.
-- **Result:** 6/6 new tests pass; full suite **99 → 105** pass (8 files); lint
-  clean; the new file is type-clean (the only `tsc` errors are pre-existing,
-  in `lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`, from the untyped
-  CommonJS helper imports — unrelated to this change).
-- **Commit:** see git log (`test: improve coverage for questions.server summary`).
+### Improvement 1 — `updateBank` selective removal (Gap F)
+- **Files changed:** `web/lib/questions.test.ts` (added cases to the existing
+  `updateBank` suite).
+- **Behavior covered:** correctly answering one missed question removes exactly
+  that entry by identity and preserves the others; correctly answering a
+  question that was never banked is a no-op.
+- **New test cases:** with Q1 and Q2 both banked as incorrect, `updateBank(Q1,
+  true)` leaves the bank as `[Q2]` (Q2's `questionNumber` intact); `updateBank`
+  on a third, never-added question with `correct = true` leaves the two banked
+  questions unchanged.
+- **Validation run:** `npm test -- lib/questions.test.ts`, then `npm test`,
+  `npm run lint`, `npx tsc --noEmit`.
+- **Result:** new cases pass; full suite **112 → 114**; lint clean; the new
+  cases add no `tsc` errors (only the pre-existing untyped-CommonJS-import nits
+  in `lib/image-cache.test.ts` / `lib/sync-helpers.test.ts` remain).
+- **Commit:** see git log (`test: improve coverage for the missed-question bank`).
 - **Push result:** pushed to `origin/main`.
 
-### Improvement 2 — `TestRun` state machine (Gap E1)
-- **Files changed:** `web/app/test/[testId]/page.test.tsx` (new).
-- **Behavior covered:** the quiz route's render states and the core answer loop —
-  classify route id → load (bank via `localStorage`, fetch otherwise) → render
-  the right screen → score → write the bank.
-- **New test cases:** an empty bank renders "No missed questions yet." with the
-  "All tests" link; a failed fetch (`ok: false`) renders the error message and
-  link (with `console.error` silenced); a fetched marathon test renders the
-  first question plus the `1 / 2` progress counter and fetches the full-corpus
-  file; answering the single bank question correctly reaches `TestResults`
-  ("Review Complete", `1 / 1 correct`) and removes it from the missed-question
-  bank in `localStorage`.
-- **Approach:** `next/navigation`'s `useParams` is mocked to set the route id;
-  bank mode is driven by seeded `localStorage` (deterministic, no shuffling
-  ambiguity), the fetch paths by a stubbed `fetch`. Async renders are awaited
-  with Testing Library `findBy*`.
+### Improvement 2 — `getQuestionsFor*` error paths (Gap G)
+- **Files changed:** `web/lib/questions.test.ts` (new `getQuestionsFor* error
+  handling` suite).
+- **Behavior covered:** the network boundary's failure modes — a non-ok HTTP
+  response and a 200 whose body is not a questions array.
+- **New test cases:** `getQuestionsForClass` rejects with an error naming the
+  data file and the `status`/`statusText` when `fetch` resolves `ok: false`;
+  `getQuestionsForPracticeTest` rejects with the `parseQuestionsArray` message
+  naming the `dataFile` when the 200 body is not an array.
+- **Validation run:** `npm test -- lib/questions.test.ts`, then `npm test`,
+  `npm run lint`, `npx tsc --noEmit`.
+- **Result:** new cases pass; full suite **114 → 116**; lint clean; type-clean.
+- **Commit:** see git log (`test: improve coverage for question fetch error handling`).
+- **Push result:** pushed to `origin/main`.
+
+### Improvement 3 — quiz-route advancement & scoring (Gap H)
+- **Files changed:** `web/app/test/[testId]/page.test.tsx` (added cases to the
+  existing `TestRun` suite).
+- **Behavior covered:** the core answer loop across more than one question — the
+  advancement branch, the progress counter, score accumulation, and the non-bank
+  results screen reached through the route.
+- **New test cases:** a two-question marathon run advances from `1 / 2` to
+  `2 / 2` after the first answer; answering both correctly reaches `TestResults`
+  with `2 / 2 correct` and `100% PASS`; answering exactly one correctly yields a
+  partial `1 / 2 correct` / `FAIL` result.
 - **Validation run:** `npm test -- "app/test/[testId]/page.test.tsx"`, then
-  `npx tsc --noEmit`, `npm test`, `npm run lint`.
-- **Result:** 4/4 new tests pass; full suite **105 → 109** pass (9 files); lint
-  clean; new file type-clean.
-- **Commit:** see git log (`test: improve coverage for the quiz route state machine`).
-- **Push result:** pushed to `origin/main`.
-
-### Improvement 3 — `Home` page (Gap E2)
-- **Files changed:** `web/app/page.test.tsx` (new).
-- **Behavior covered:** the home page's mapping of each licence class's summary
-  to test links, the Marathon link, and the missed-question bank link.
-- **New test cases:** each licence class renders its label and one link per
-  practice test with the correct `/test/{id}` href, label, and `{count}
-  questions` (counts pinned to `getClassSummary`'s output, not hard-coded),
-  plus a Marathon link to `/test/{marathonId}` showing the class total; the
-  bank link is absent when the bank is empty and present (with `Missed
-  Questions` and the count) once `localStorage` holds bank questions.
-- **Approach:** links matched by their unique class-prefixed href via
-  `querySelector`, so shared labels ("Practice Test 1") are unambiguous; the
-  real `public/data` files are read through the `server-only` alias.
-- **Validation run:** `npm test -- app/page.test.tsx`, then `npx tsc --noEmit`,
-  `npm test`, `npm run lint`.
-- **Result:** 3/3 new tests pass; full suite **109 → 112** pass (10 files); lint
-  clean; new file type-clean.
-- **Commit:** see git log (`test: improve coverage for the home page`).
+  `npm test`, `npm run lint`, `npx tsc --noEmit`.
+- **Result:** new cases pass; full suite grows accordingly; lint clean; type-clean.
+- **Commit:** see git log (`test: improve coverage for quiz advancement and scoring`).
 - **Push result:** pushed to `origin/main`.
 
 ## 6. Skipped Opportunities
@@ -194,22 +208,21 @@ Three improvements, each its own commit, validated after each:
 - `app/layout.tsx` — trivial shell, no logic.
 - Stateful pipeline scripts — side-effecting; pure cores already tested.
 - `QuestionCard` `next/image` branch — intentionally avoided by the suite.
+- `QuestionCard` form-field keyboard guard — defensive; no inputs exist to trigger it.
+- `TestResults` `total === 0` — unreachable via the route.
+- SSR guards in `getBankQuestions` / `updateBank` — not reachable under jsdom.
 
 ## 7. Final Notes
 
-All three planned improvements landed. The suite grew **99 → 112 tests
-(7 → 10 files)** this cycle, closing the two gaps the previous cycle had
-deferred (the `server-only` summary module and the App Router route
-components).
+This cycle targets uncovered **branches** inside already-tested modules rather
+than whole new files — the bank's selective-removal path, the fetch boundary's
+error paths, and the quiz loop's multi-question advancement. Production code is
+unchanged; all changes are additive test cases that follow the existing style.
 
-Production code is unchanged. The only non-test change is a `server-only`
-resolve alias in `vitest.config.ts` plus the empty stub it points at — test
-infrastructure that mirrors Next's own `react-server` no-op and does not affect
-`next dev` or `next build`.
-
-Remaining untested code is intentionally left (see §6): `app/layout.tsx` is a
-trivial shell, the stateful pipeline scripts are side-effecting with their pure
-cores already tested, and the `QuestionCard` `next/image` branch is avoided by
-the suite. A pre-existing `tsc` nit (untyped CommonJS helper imports in
-`lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`) is unrelated to this
-cycle and was left as-is.
+The only standing non-test artifact remains the `server-only` resolve alias +
+empty stub from the previous cycle (test infrastructure mirroring Next's own
+`react-server` no-op; no effect on `next dev` / `next build`). A pre-existing
+`tsc` nit (untyped CommonJS helper imports in `lib/image-cache.test.ts` /
+`lib/sync-helpers.test.ts`) is unrelated to this cycle and left as-is.
+</content>
+</invoke>
