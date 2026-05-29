@@ -100,7 +100,7 @@ needing test infrastructure (a `server-only` resolver) or as async/stateful.
   counts.
 - **Risk level:** Low/Medium.
 - **Validation:** `npm test -- app/page.test.tsx`
-- **Status:** Planned
+- **Status:** Implemented (see §5, Improvement 3)
 
 ### Remaining (not planned this cycle)
 - **`app/layout.tsx`:** renders `<html><body>{children}</body></html>` with
@@ -169,6 +169,26 @@ Three improvements, each its own commit, validated after each:
 - **Commit:** see git log (`test: improve coverage for the quiz route state machine`).
 - **Push result:** pushed to `origin/main`.
 
+### Improvement 3 — `Home` page (Gap E2)
+- **Files changed:** `web/app/page.test.tsx` (new).
+- **Behavior covered:** the home page's mapping of each licence class's summary
+  to test links, the Marathon link, and the missed-question bank link.
+- **New test cases:** each licence class renders its label and one link per
+  practice test with the correct `/test/{id}` href, label, and `{count}
+  questions` (counts pinned to `getClassSummary`'s output, not hard-coded),
+  plus a Marathon link to `/test/{marathonId}` showing the class total; the
+  bank link is absent when the bank is empty and present (with `Missed
+  Questions` and the count) once `localStorage` holds bank questions.
+- **Approach:** links matched by their unique class-prefixed href via
+  `querySelector`, so shared labels ("Practice Test 1") are unambiguous; the
+  real `public/data` files are read through the `server-only` alias.
+- **Validation run:** `npm test -- app/page.test.tsx`, then `npx tsc --noEmit`,
+  `npm test`, `npm run lint`.
+- **Result:** 3/3 new tests pass; full suite **109 → 112** pass (10 files); lint
+  clean; new file type-clean.
+- **Commit:** see git log (`test: improve coverage for the home page`).
+- **Push result:** pushed to `origin/main`.
+
 ## 6. Skipped Opportunities
 
 - `app/layout.tsx` — trivial shell, no logic.
@@ -177,7 +197,19 @@ Three improvements, each its own commit, validated after each:
 
 ## 7. Final Notes
 
+All three planned improvements landed. The suite grew **99 → 112 tests
+(7 → 10 files)** this cycle, closing the two gaps the previous cycle had
+deferred (the `server-only` summary module and the App Router route
+components).
+
 Production code is unchanged. The only non-test change is a `server-only`
 resolve alias in `vitest.config.ts` plus the empty stub it points at — test
 infrastructure that mirrors Next's own `react-server` no-op and does not affect
 `next dev` or `next build`.
+
+Remaining untested code is intentionally left (see §6): `app/layout.tsx` is a
+trivial shell, the stateful pipeline scripts are side-effecting with their pure
+cores already tested, and the `QuestionCard` `next/image` branch is avoided by
+the suite. A pre-existing `tsc` nit (untyped CommonJS helper imports in
+`lib/image-cache.test.ts` / `lib/sync-helpers.test.ts`) is unrelated to this
+cycle and was left as-is.
